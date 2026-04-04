@@ -1,0 +1,118 @@
+(kicad_sch
+	(version 20250114)
+	(generator "eeschema")
+	(generator_version "9.0")
+	(uuid "04b8bb56-25a8-431d-accc-900ca88fd18f")
+	(paper "A4")
+	(lib_symbols)
+	(sheet
+		(at 46.99 44.45)
+		(size 20.32 26.67)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "3dbebdc0-e9f6-47aa-964e-701632318a4b")
+		(property "Sheetname" "Power"
+			(at 46.99 43.7384 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "power.kicad_sch"
+			(at 46.99 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(instances
+			(project "capacitor-alarm-clock"
+				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f"
+					(page "3")
+				)
+			)
+		)
+	)
+	(sheet
+		(at 110.49 45.72)
+		(size 19.05 25.4)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(stroke
+			(width 0.1524)
+			(type solid)
+		)
+		(fill
+			(color 0 0 0 0.0000)
+		)
+		(uuid "f606b98c-0b2d-4203-8163-00c5ce40d63a")
+		(property "Sheetname" "ESP32"
+			(at 110.49 45.0084 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left bottom)
+			)
+		)
+		(property "Sheetfile" "esp32.kicad_sch"
+			(at 110.49 71.7046 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left top)
+			)
+		)
+		(pin "USB_D-" input
+			(at 110.49 48.26 180)
+			(uuid "c6b895db-e7cc-4bf8-9ff5-95d28a8157b9")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(pin "USB_D+" input
+			(at 110.49 50.8 180)
+			(uuid "204a8843-43e0-4b53-acde-243aeb2f3256")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(instances
+			(project "capacitor-alarm-clock"
+				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f"
+					(page "2")
+				)
+			)
+		)
+	)
+	(sheet_instances
+		(path "/"
+			(page "1")
+		)
+	)
+	(embedded_fonts no)
+)
