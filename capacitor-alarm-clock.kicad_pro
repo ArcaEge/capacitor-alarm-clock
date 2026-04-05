@@ -623,6 +623,14 @@
     [
       "3dbebdc0-e9f6-47aa-964e-701632318a4b",
       "Power"
+    ],
+    [
+      "415a5c24-223e-40c7-b4a5-c918f5b06253",
+      "USB"
+    ],
+    [
+      "cf56b03f-47c4-4b8c-ad5a-a8cfbffbcd00",
+      "Relays"
     ]
   ],
   "text_variables": {}
