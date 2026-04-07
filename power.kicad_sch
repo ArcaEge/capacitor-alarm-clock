@@ -5,270 +5,7 @@
 	(uuid "b7d60dba-42df-4cbd-9019-52211fc8709a")
 	(paper "A4")
 	(lib_symbols
-		(symbol "Device:C"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0.254)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "C"
-				(at 0.635 2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Value" "C"
-				(at 0.635 -2.54 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(justify left)
-				)
-			)
-			(property "Footprint" ""
-				(at 0.9652 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Unpolarized capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "cap capacitor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "C_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "C_0_1"
-				(polyline
-					(pts
-						(xy -2.032 0.762) (xy 2.032 0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy -2.032 -0.762) (xy 2.032 -0.762)
-					)
-					(stroke
-						(width 0.508)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "C_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 2.794)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "Device:R"
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "R"
-				(at 2.032 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" "R"
-				(at 0 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at -1.778 0 90)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "~"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "R res resistor"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_fp_filters" "R_*"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "R_0_1"
-				(rectangle
-					(start -1.016 -2.54)
-					(end 1.016 2.54)
-					(stroke
-						(width 0.254)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "R_1_1"
-				(pin passive line
-					(at 0 3.81 270)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin passive line
-					(at 0 -3.81 90)
-					(length 1.27)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
-		(symbol "EasyEDA_Lib:BZT52C3V3"
+		(symbol "EasyEDA_Lib:B340A-13-F"
 			(exclude_from_sim no)
 			(in_bom yes)
 			(on_board yes)
@@ -288,7 +25,7 @@
 					)
 				)
 			)
-			(property "Footprint" "EasyEDA_Lib:SOD-123_L2.7-W1.6-LS3.7-RD"
+			(property "Footprint" "EasyEDA_Lib:SMA_L4.4-W2.6-LS5.0-RD"
 				(at 0 0 0)
 				(effects
 					(font
@@ -297,7 +34,7 @@
 					(hide yes)
 				)
 			)
-			(property "Datasheet" "https://item.szlcsc.com/datasheet/BZT52C3V3/184802.html"
+			(property "Datasheet" "https://item.szlcsc.com/datasheet/B340A-13-F/86270.html"
 				(at 0 0 0)
 				(effects
 					(font
@@ -306,7 +43,7 @@
 					(hide yes)
 				)
 			)
-			(property "Description" "Diode Configuration:Independent Zener Voltage(Nom):3.3V Reverse Leakage Current (Ir):20uA@1V Zener Voltage(Range):3.14V~3.47V Zener Voltage(Range):3.14V~3.47V Pd - Power Dissipation:500mW Impedance(Zzt):130Ω"
+			(property "Description" "Voltage - Forward(Vf@If):500mV@3A Voltage - DC Reverse(Vr):40V Current - Rectified:3A Reverse Leakage Current (Ir):500uA@40V Operating Junction Temperature Range:-55°C~+150°C Operating Junction Temperature Range:-55°C~+150°C Non-Repetitive Peak Forward Surge"
 				(at 0 0 0)
 				(effects
 					(font
@@ -315,7 +52,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer Part" "BZT52C3V3"
+			(property "Manufacturer Part" "B340A-13-F"
 				(at 0 0 0)
 				(effects
 					(font
@@ -324,7 +61,7 @@
 					(hide yes)
 				)
 			)
-			(property "Manufacturer" "MDD(辰达半导体)"
+			(property "Manufacturer" "DIODES(美台)"
 				(at 0 0 0)
 				(effects
 					(font
@@ -333,7 +70,7 @@
 					(hide yes)
 				)
 			)
-			(property "Supplier Part" "C173413"
+			(property "Supplier Part" "C85098"
 				(at 0 0 0)
 				(effects
 					(font
@@ -351,7 +88,7 @@
 					(hide yes)
 				)
 			)
-			(property "LCSC Part Name" "独立式 耐压:3.3V 电流:20uA@1V"
+			(property "LCSC Part Name" "电压:40V 电流:3A"
 				(at 0 0 0)
 				(effects
 					(font
@@ -360,10 +97,11 @@
 					(hide yes)
 				)
 			)
-			(symbol "BZT52C3V3_1_0"
+			(symbol "B340A-13-F_1_0"
 				(polyline
 					(pts
-						(xy -2.54 2.286) (xy -1.524 1.27) (xy -1.524 1.27) (xy -1.524 -1.27) (xy -1.524 -1.27) (xy -0.508 -2.286)
+						(xy -2.032 1.524) (xy -2.032 1.778) (xy -2.032 1.778) (xy -1.524 1.778) (xy -1.524 1.778) (xy -1.524 -2.032)
+						(xy -1.524 -2.032) (xy -1.016 -2.032) (xy -1.016 -2.032) (xy -1.016 -1.778)
 					)
 					(stroke
 						(width 0)
@@ -669,185 +407,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "EasyEDA_Lib:NCP1117ST33T3G"
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "U"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Value" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" "EasyEDA_Lib:SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" "https://item.szlcsc.com/datasheet/NCP1117ST33T3G/27282.html"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Output Type:Fixed Voltage - Supply:20V Output Voltage:3.3V Output Voltage:3.3V Output Current:1A Power Supply Rejection Ratio (PSRR):62dB@(120Hz) Voltage Dropout:1.2V@(800mA) standby current:6mA Noise:0.003%Vout Features:Thermal Shutdown；Over Current Prot"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer Part" "NCP1117ST33T3G"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Manufacturer" "onsemi(安森美)"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier Part" "C26537"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Supplier" "LCSC"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "LCSC Part Name" "3.3V 1A 20V"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "NCP1117ST33T3G_1_0"
-				(rectangle
-					(start -7.62 6.35)
-					(end 7.62 -6.35)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 3.81 0)
-					(length 2.54)
-					(name "ADJ/GND"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 1.27 0)
-					(length 2.54)
-					(name "OUTPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "2"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 -1.27 0)
-					(length 2.54)
-					(name "INPUT"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "3"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-				(pin unspecified line
-					(at -10.16 -3.81 0)
-					(length 2.54)
-					(name "TAB"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "4"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "EasyEDA_Lib:PZ254V-11-02P"
 			(exclude_from_sim no)
 			(in_bom yes)
@@ -991,131 +550,6 @@
 			)
 			(embedded_fonts no)
 		)
-		(symbol "power:+3V3"
-			(power)
-			(pin_numbers
-				(hide yes)
-			)
-			(pin_names
-				(offset 0)
-				(hide yes)
-			)
-			(exclude_from_sim no)
-			(in_bom yes)
-			(on_board yes)
-			(property "Reference" "#PWR"
-				(at 0 -3.81 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Value" "+3V3"
-				(at 0 3.556 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-				)
-			)
-			(property "Footprint" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Datasheet" ""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "Description" "Power symbol creates a global label with name \"+3V3\""
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(property "ki_keywords" "global power"
-				(at 0 0 0)
-				(effects
-					(font
-						(size 1.27 1.27)
-					)
-					(hide yes)
-				)
-			)
-			(symbol "+3V3_0_1"
-				(polyline
-					(pts
-						(xy -0.762 1.27) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 2.54) (xy 0.762 1.27)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-				(polyline
-					(pts
-						(xy 0 0) (xy 0 2.54)
-					)
-					(stroke
-						(width 0)
-						(type default)
-					)
-					(fill
-						(type none)
-					)
-				)
-			)
-			(symbol "+3V3_1_1"
-				(pin power_in line
-					(at 0 0 90)
-					(length 0)
-					(name "~"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-					(number "1"
-						(effects
-							(font
-								(size 1.27 1.27)
-							)
-						)
-					)
-				)
-			)
-			(embedded_fonts no)
-		)
 		(symbol "power:GND"
 			(power)
 			(pin_numbers
@@ -1198,6 +632,131 @@
 			(symbol "GND_1_1"
 				(pin power_in line
 					(at 0 0 270)
+					(length 0)
+					(name "~"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+					(number "1"
+						(effects
+							(font
+								(size 1.27 1.27)
+							)
+						)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
+		(symbol "power:VCC"
+			(power)
+			(pin_numbers
+				(hide yes)
+			)
+			(pin_names
+				(offset 0)
+				(hide yes)
+			)
+			(exclude_from_sim no)
+			(in_bom yes)
+			(on_board yes)
+			(property "Reference" "#PWR"
+				(at 0 -3.81 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Value" "VCC"
+				(at 0 3.556 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Power symbol creates a global label with name \"VCC\""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "global power"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "VCC_0_1"
+				(polyline
+					(pts
+						(xy -0.762 1.27) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 2.54) (xy 0.762 1.27)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+				(polyline
+					(pts
+						(xy 0 0) (xy 0 2.54)
+					)
+					(stroke
+						(width 0)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(symbol "VCC_1_1"
+				(pin power_in line
+					(at 0 0 90)
 					(length 0)
 					(name "~"
 						(effects
@@ -1343,83 +902,11 @@
 			(embedded_fonts no)
 		)
 	)
-	(text "todo: swap with one that can stand 24v"
-		(exclude_from_sim no)
-		(at 152.654 29.718 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-		)
-		(uuid "8e448bd9-896c-42af-8e42-2a25beba1480")
-	)
-	(junction
-		(at 127 39.37)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "0d6e7f47-e09f-4b19-a4c2-a5969e7f63cb")
-	)
-	(junction
-		(at 114.3 41.91)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "425371ab-be53-463a-9a65-b56aa52f4558")
-	)
-	(junction
-		(at 53.34 109.22)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "493cb5dc-b04e-4b67-8834-e5aae08236ba")
-	)
 	(junction
 		(at 55.88 49.53)
 		(diameter 0)
 		(color 0 0 0 0)
 		(uuid "5eea84fb-8b4c-4eba-b1e0-521f952db841")
-	)
-	(junction
-		(at 53.34 95.25)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "94a87f27-060b-4e12-9464-86a683c4d694")
-	)
-	(junction
-		(at 127 44.45)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "d0b5bd76-098a-490f-a2d6-0387489b2594")
-	)
-	(junction
-		(at 114.3 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e3a6b92f-9a3f-4d0a-8366-b0f2e8e3f4f9")
-	)
-	(junction
-		(at 110.49 58.42)
-		(diameter 0)
-		(color 0 0 0 0)
-		(uuid "e9a98f26-00a2-4f6b-8ca7-9a31524d1f7c")
-	)
-	(wire
-		(pts
-			(xy 43.18 109.22) (xy 53.34 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "03a077e6-1173-4e28-9d39-148a124d9b4b")
-	)
-	(wire
-		(pts
-			(xy 114.3 33.02) (xy 114.3 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "0c610eb1-abc1-4499-b9cb-544938cb4a27")
 	)
 	(wire
 		(pts
@@ -1443,86 +930,6 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 41.91) (xy 114.3 41.91)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "242f1d77-b096-45bc-b4c9-d6032da907c7")
-	)
-	(wire
-		(pts
-			(xy 127 33.02) (xy 127 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "24574697-25b8-4562-a69b-c11b881adb7f")
-	)
-	(wire
-		(pts
-			(xy 114.3 54.61) (xy 114.3 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2b65e991-730c-448a-b8e4-b767d33162ba")
-	)
-	(wire
-		(pts
-			(xy 53.34 109.22) (xy 53.34 111.76)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2ba8d18a-cab2-4641-93a7-3bf1f4f67ae9")
-	)
-	(wire
-		(pts
-			(xy 128.27 39.37) (xy 127 39.37)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "2e4ce9a6-9ebb-49e3-9ad4-ca16e51846bb")
-	)
-	(wire
-		(pts
-			(xy 114.3 58.42) (xy 127 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "37a39a07-01ab-4e88-ab10-15f15c653ab6")
-	)
-	(wire
-		(pts
-			(xy 114.3 41.91) (xy 114.3 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "3b5d81ad-2200-4f8e-9485-bd86ef5e2dc5")
-	)
-	(wire
-		(pts
-			(xy 127 44.45) (xy 127 46.99)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "41308e23-1301-42dc-a8ae-d7335d68aca4")
-	)
-	(wire
-		(pts
 			(xy 121.92 96.52) (xy 118.11 96.52)
 		)
 		(stroke
@@ -1533,53 +940,23 @@
 	)
 	(wire
 		(pts
-			(xy 53.34 104.14) (xy 53.34 109.22)
+			(xy 133.35 52.07) (xy 133.35 49.53)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "577036e5-452f-4ceb-aa5c-9abc2a3e5cf5")
+		(uuid "5477e452-764b-47b0-89f9-e7a070d51314")
 	)
 	(wire
 		(pts
-			(xy 43.18 97.79) (xy 43.18 95.25)
+			(xy 118.11 52.07) (xy 120.65 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "65477faf-e6d3-41f3-a43f-884ec7299940")
-	)
-	(wire
-		(pts
-			(xy 53.34 95.25) (xy 53.34 96.52)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "65e74bd8-d5b3-443a-9357-42be8ae5747b")
-	)
-	(wire
-		(pts
-			(xy 127 44.45) (xy 128.27 44.45)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "741d5c46-cb9f-44c6-ae5f-2610d4b1315b")
-	)
-	(wire
-		(pts
-			(xy 43.18 107.95) (xy 43.18 109.22)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "7d3a2033-1232-4de6-baaa-55eefe3ac79e")
+		(uuid "68532d12-e2bf-4a90-9c61-9f9759e0f14b")
 	)
 	(wire
 		(pts
@@ -1590,46 +967,6 @@
 			(type default)
 		)
 		(uuid "886f1d59-116d-4610-9981-cbb41969f997")
-	)
-	(wire
-		(pts
-			(xy 53.34 83.82) (xy 53.34 85.09)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "97ee49f5-e33f-4dd3-af6d-66f125d81c8a")
-	)
-	(wire
-		(pts
-			(xy 110.49 36.83) (xy 110.49 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "9da448b4-757c-4650-befd-8478a1194d02")
-	)
-	(wire
-		(pts
-			(xy 127 54.61) (xy 127 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a0b8ed5d-1acb-47d6-8e5b-106f4d545eb0")
-	)
-	(wire
-		(pts
-			(xy 128.27 36.83) (xy 110.49 36.83)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "a7a31808-0965-4d5a-bd6b-7a5c88a04696")
 	)
 	(wire
 		(pts
@@ -1653,6 +990,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 52.07) (xy 133.35 52.07)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "b5d6186c-b003-4bc9-bb9a-7fbc4bc8a5e2")
+	)
+	(wire
+		(pts
 			(xy 118.11 96.52) (xy 118.11 95.25)
 		)
 		(stroke
@@ -1660,26 +1007,6 @@
 			(type default)
 		)
 		(uuid "b82d1035-a65e-4bed-b07d-4509f1a1f2f8")
-	)
-	(wire
-		(pts
-			(xy 110.49 58.42) (xy 110.49 59.69)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "bb1404f8-de2e-4c36-97ac-46c83ba7d242")
-	)
-	(wire
-		(pts
-			(xy 53.34 92.71) (xy 53.34 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "c60b4a45-dd67-4c07-82e0-19e8b6a12330")
 	)
 	(wire
 		(pts
@@ -1703,43 +1030,13 @@
 	)
 	(wire
 		(pts
-			(xy 127 39.37) (xy 127 44.45)
+			(xy 118.11 49.53) (xy 118.11 52.07)
 		)
 		(stroke
 			(width 0)
 			(type default)
 		)
-		(uuid "e5382c7c-fa83-42f6-b966-8f1ce0317108")
-	)
-	(wire
-		(pts
-			(xy 43.18 95.25) (xy 53.34 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ec5b2f51-4e65-4f43-a18c-dc7a9c5decf5")
-	)
-	(wire
-		(pts
-			(xy 53.34 95.25) (xy 63.5 95.25)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee054a97-0aaa-4b09-8611-2e415bfc2abe")
-	)
-	(wire
-		(pts
-			(xy 114.3 58.42) (xy 110.49 58.42)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "ee83f5ce-685a-458a-b24e-7f9a04c06186")
+		(uuid "de1e459a-b1bb-4ad6-b3d1-8fef0b35bca4")
 	)
 	(wire
 		(pts
@@ -1751,29 +1048,18 @@
 		)
 		(uuid "f40bbd74-4a5a-440e-8984-d5be7e723fe8")
 	)
-	(hierarchical_label "VDC_SENSE"
-		(shape output)
-		(at 63.5 95.25 0)
-		(effects
-			(font
-				(size 1.27 1.27)
-			)
-			(justify left)
-		)
-		(uuid "808ee3d0-557a-43bc-af05-b0bf2351b171")
-	)
 	(symbol
 		(lib_id "EasyEDA_Lib:PZ254V-11-02P")
 		(at 127 97.79 0)
+		(mirror x)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp yes)
-		(fields_autoplaced yes)
 		(uuid "3a4db9d7-84e3-41e0-b2f8-e5280aaacce3")
 		(property "Reference" "H2"
-			(at 130.81 96.5199 0)
+			(at 130.81 99.0601 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1782,7 +1068,7 @@
 			)
 		)
 		(property "Value" "~"
-			(at 130.81 99.0599 0)
+			(at 130.81 96.5201 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -1944,85 +1230,6 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:C")
-		(at 127 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "5acb2088-283b-48c1-b379-78e01e3a8a97")
-		(property "Reference" "C2"
-			(at 130.81 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 130.81 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 127.9652 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 127 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 127 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C19702"
-			(at 127 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "eac1b07e-a874-44c4-ad97-70a359573104")
-		)
-		(pin "1"
-			(uuid "0ff07827-988e-4983-8abd-48a6cc66c839")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "C2")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
 		(lib_id "power:GND")
 		(at 118.11 101.6 0)
 		(unit 1)
@@ -2089,6 +1296,72 @@
 		)
 	)
 	(symbol
+		(lib_id "power:VCC")
+		(at 133.35 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "703f1c8a-f6c1-4279-b22e-c50869dfe5a9")
+		(property "Reference" "#PWR033"
+			(at 133.35 53.34 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Value" "VCC"
+			(at 133.35 44.45 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" ""
+			(at 133.35 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" ""
+			(at 133.35 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Power symbol creates a global label with name \"VCC\""
+			(at 133.35 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "b385dd2a-3745-4414-9bdc-d0b1c512950f")
+		)
+		(instances
+			(project "capacitor-alarm-clock"
+				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
+					(reference "#PWR033")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:GND")
 		(at 55.88 53.34 0)
 		(unit 1)
@@ -2149,598 +1422,6 @@
 			(project "capacitor-alarm-clock"
 				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
 					(reference "#PWR08")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:R")
-		(at 53.34 88.9 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7594787d-592c-4565-8ca0-2e358ce97b0a")
-		(property "Reference" "R7"
-			(at 55.88 87.6299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "62K"
-			(at 55.88 90.1699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 51.562 88.9 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Resistor"
-			(at 53.34 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C137694"
-			(at 53.34 88.9 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "60a90334-f4e5-4e42-8b38-dd8b6c04cbf4")
-		)
-		(pin "2"
-			(uuid "949cf506-2514-4c90-ad77-96d906cb73b8")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "R7")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 110.49 59.69 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "7a3f70ed-418a-42bf-af58-f86963b0c95f")
-		(property "Reference" "#PWR09"
-			(at 110.49 66.04 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 110.49 64.77 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 110.49 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 110.49 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 110.49 59.69 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "514cfd89-8fe3-410b-b1f9-66761b6f29c1")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "#PWR09")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "Device:C")
-		(at 114.3 50.8 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "99e2645f-9fda-4007-a790-4633eb8bd204")
-		(property "Reference" "C1"
-			(at 118.11 49.5299 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "10u"
-			(at 118.11 52.0699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "Capacitor_SMD:C_0603_1608Metric"
-			(at 115.2652 54.61 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 114.3 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Unpolarized capacitor"
-			(at 114.3 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C19702"
-			(at 114.3 50.8 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "e2fd5526-b817-4160-90e2-8b200b53f6e5")
-		)
-		(pin "1"
-			(uuid "da066b31-a5f7-4b36-b1bd-634e692570f9")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "C1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA_Lib:BZT52C3V3")
-		(at 43.18 102.87 270)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ae3326c-4a2f-466d-b19b-0e341e058e8e")
-		(property "Reference" "D1"
-			(at 46.99 100.9649 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "3V3"
-			(at 46.99 103.5049 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EasyEDA_Lib:SOD-123_L2.7-W1.6-LS3.7-RD"
-			(at 43.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/BZT52C3V3/184802.html"
-			(at 43.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Diode Configuration:Independent Zener Voltage(Nom):3.3V Reverse Leakage Current (Ir):20uA@1V Zener Voltage(Range):3.14V~3.47V Zener Voltage(Range):3.14V~3.47V Pd - Power Dissipation:500mW Impedance(Zzt):130Ω"
-			(at 43.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "BZT52C3V3"
-			(at 43.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "MDD(辰达半导体)"
-			(at 43.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C173413"
-			(at 43.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 43.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "独立式 耐压:3.3V 电流:20uA@1V"
-			(at 43.18 102.87 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "34d74f70-7fba-4d5e-a2d5-b65bf16b08c7")
-		)
-		(pin "2"
-			(uuid "476cd28a-d60f-4716-bf36-d6b6a627ae8d")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "D1")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:GND")
-		(at 53.34 111.76 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "9ef1ca39-3df3-435c-80d3-c4bc1c6b80e9")
-		(property "Reference" "#PWR027"
-			(at 53.34 118.11 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "GND"
-			(at 53.34 116.84 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"GND\" , ground"
-			(at 53.34 111.76 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "40e5bc40-7beb-4690-b10c-d2bcf765d79e")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "#PWR027")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:VDC")
-		(at 53.34 83.82 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a261c9b2-1a71-463d-a7a0-10d1dc73c514")
-		(property "Reference" "#PWR030"
-			(at 53.34 87.63 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "VDC"
-			(at 53.34 78.74 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 53.34 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 53.34 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 53.34 83.82 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "0b33999c-66e9-4ce5-aa88-698d98cc25b7")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "#PWR030")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "EasyEDA_Lib:NCP1117ST33T3G")
-		(at 138.43 40.64 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "a88de4cf-bfaf-4df8-9f8e-220d6da5c2ba")
-		(property "Reference" "U2"
-			(at 147.32 39.3699 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Value" "~"
-			(at 147.32 41.9099 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(justify left)
-			)
-		)
-		(property "Footprint" "EasyEDA_Lib:SOT-223-3_L6.5-W3.4-P2.30-LS7.0-BR"
-			(at 138.43 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "https://item.szlcsc.com/datasheet/NCP1117ST33T3G/27282.html"
-			(at 138.43 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Output Type:Fixed Voltage - Supply:20V Output Voltage:3.3V Output Voltage:3.3V Output Current:1A Power Supply Rejection Ratio (PSRR):62dB@(120Hz) Voltage Dropout:1.2V@(800mA) standby current:6mA Noise:0.003%Vout Features:Thermal Shutdown；Over Current Prot"
-			(at 138.43 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer Part" "NCP1117ST33T3G"
-			(at 138.43 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Manufacturer" "onsemi(安森美)"
-			(at 138.43 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier Part" "C26537"
-			(at 138.43 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Supplier" "LCSC"
-			(at 138.43 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "LCSC Part Name" "3.3V 1A 20V"
-			(at 138.43 40.64 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "2"
-			(uuid "69c3d7ec-2438-4196-a774-4d67ae025bf7")
-		)
-		(pin "1"
-			(uuid "20457f80-4467-45ff-a0bd-cf27d5d21d17")
-		)
-		(pin "4"
-			(uuid "118cb60b-7c17-4f0f-874f-0781dcadd270")
-		)
-		(pin "3"
-			(uuid "cd00c487-6dbf-4146-8f51-33e9cc802c13")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "U2")
 					(unit 1)
 				)
 			)
@@ -2814,16 +1495,16 @@
 	)
 	(symbol
 		(lib_id "power:VDC")
-		(at 114.3 33.02 0)
+		(at 118.11 49.53 0)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "b87776ff-c116-455f-822c-2dfca3e2a5c2")
-		(property "Reference" "#PWR011"
-			(at 114.3 36.83 0)
+		(uuid "b610e2ed-4b67-4c81-ab9b-917bfbfc44a7")
+		(property "Reference" "#PWR09"
+			(at 118.11 53.34 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2832,7 +1513,7 @@
 			)
 		)
 		(property "Value" "VDC"
-			(at 114.3 27.94 0)
+			(at 118.11 44.45 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2840,7 +1521,7 @@
 			)
 		)
 		(property "Footprint" ""
-			(at 114.3 33.02 0)
+			(at 118.11 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2849,7 +1530,7 @@
 			)
 		)
 		(property "Datasheet" ""
-			(at 114.3 33.02 0)
+			(at 118.11 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2858,7 +1539,7 @@
 			)
 		)
 		(property "Description" "Power symbol creates a global label with name \"VDC\""
-			(at 114.3 33.02 0)
+			(at 118.11 49.53 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -2867,78 +1548,12 @@
 			)
 		)
 		(pin "1"
-			(uuid "cf615a43-5c69-41d4-bf4b-70202afc1cd6")
+			(uuid "8d6d369d-a01f-4bb5-8a22-61267f1c918c")
 		)
 		(instances
 			(project "capacitor-alarm-clock"
 				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "#PWR011")
-					(unit 1)
-				)
-			)
-		)
-	)
-	(symbol
-		(lib_id "power:+3V3")
-		(at 127 33.02 0)
-		(unit 1)
-		(exclude_from_sim no)
-		(in_bom yes)
-		(on_board yes)
-		(dnp no)
-		(fields_autoplaced yes)
-		(uuid "cd22711a-143e-4ffd-9d05-42d087cf55b2")
-		(property "Reference" "#PWR010"
-			(at 127 36.83 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Value" "+3V3"
-			(at 127 27.94 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-			)
-		)
-		(property "Footprint" ""
-			(at 127 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" ""
-			(at 127 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Description" "Power symbol creates a global label with name \"+3V3\""
-			(at 127 33.02 0)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(pin "1"
-			(uuid "352b1b6b-039f-477a-a1d3-1c438cc94cb8")
-		)
-		(instances
-			(project "capacitor-alarm-clock"
-				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "#PWR010")
+					(reference "#PWR09")
 					(unit 1)
 				)
 			)
@@ -3061,44 +1676,33 @@
 		)
 	)
 	(symbol
-		(lib_id "Device:R")
-		(at 53.34 100.33 0)
+		(lib_id "EasyEDA_Lib:B340A-13-F")
+		(at 125.73 52.07 180)
 		(unit 1)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
 		(dnp no)
 		(fields_autoplaced yes)
-		(uuid "dbe9d2ae-427d-4c5a-a138-0dc7e6968d71")
-		(property "Reference" "R6"
-			(at 55.88 99.0599 0)
+		(uuid "fa3e7694-5542-4ea3-86d8-63969bb03e95")
+		(property "Reference" "D3"
+			(at 126.111 45.72 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Value" "10K"
-			(at 55.88 101.5999 0)
+		(property "Value" "~"
+			(at 126.111 48.26 0)
 			(effects
 				(font
 					(size 1.27 1.27)
 				)
-				(justify left)
 			)
 		)
-		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
-			(at 51.562 100.33 90)
-			(effects
-				(font
-					(size 1.27 1.27)
-				)
-				(hide yes)
-			)
-		)
-		(property "Datasheet" "~"
-			(at 53.34 100.33 0)
+		(property "Footprint" "EasyEDA_Lib:SMA_L4.4-W2.6-LS5.0-RD"
+			(at 125.73 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3106,8 +1710,8 @@
 				(hide yes)
 			)
 		)
-		(property "Description" "Resistor"
-			(at 53.34 100.33 0)
+		(property "Datasheet" "https://item.szlcsc.com/datasheet/B340A-13-F/86270.html"
+			(at 125.73 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3115,8 +1719,8 @@
 				(hide yes)
 			)
 		)
-		(property "Supplier Part" "C98220"
-			(at 53.34 100.33 0)
+		(property "Description" "Voltage - Forward(Vf@If):500mV@3A Voltage - DC Reverse(Vr):40V Current - Rectified:3A Reverse Leakage Current (Ir):500uA@40V Operating Junction Temperature Range:-55°C~+150°C Operating Junction Temperature Range:-55°C~+150°C Non-Repetitive Peak Forward Surge"
+			(at 125.73 52.07 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -3124,16 +1728,61 @@
 				(hide yes)
 			)
 		)
-		(pin "1"
-			(uuid "89b39121-6d91-4bcf-a5fb-b9c20d2ed8dc")
+		(property "Manufacturer Part" "B340A-13-F"
+			(at 125.73 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Manufacturer" "DIODES(美台)"
+			(at 125.73 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C85098"
+			(at 125.73 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 125.73 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "LCSC Part Name" "电压:40V 电流:3A"
+			(at 125.73 52.07 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
 		)
 		(pin "2"
-			(uuid "ce70e27f-7632-4c4e-a12d-28b0614d0bac")
+			(uuid "b812c7d8-858a-49cf-ab11-71650f245f98")
+		)
+		(pin "1"
+			(uuid "0f016c05-ac3f-477f-b3e8-b2a432841afe")
 		)
 		(instances
 			(project "capacitor-alarm-clock"
 				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/3dbebdc0-e9f6-47aa-964e-701632318a4b"
-					(reference "R6")
+					(reference "D3")
 					(unit 1)
 				)
 			)
