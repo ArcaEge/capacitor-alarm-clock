@@ -1725,6 +1725,16 @@
 	)
 	(wire
 		(pts
+			(xy 81.28 93.98) (xy 80.01 93.98)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "87380a86-b566-4546-8386-fa8503129617")
+	)
+	(wire
+		(pts
 			(xy 101.6 123.19) (xy 101.6 120.65)
 		)
 		(stroke
@@ -2014,6 +2024,17 @@
 			(justify right)
 		)
 		(uuid "3fec1a1a-a46d-473d-aee7-ab01bc81f73c")
+	)
+	(hierarchical_label "RESET"
+		(shape input)
+		(at 81.28 93.98 0)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify left)
+		)
+		(uuid "6e7290f2-3286-4c0e-8875-78d3096d3eae")
 	)
 	(symbol
 		(lib_id "power:GND")
@@ -3402,6 +3423,83 @@
 			(project "capacitor-alarm-clock"
 				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/ebe10c23-19f6-433f-9285-78aaa5e0ae9a"
 					(reference "#PWR065")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Device:R")
+		(at 76.2 93.98 270)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom yes)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "8504832f-e1c4-430a-a69a-69e9a52d19d8")
+		(property "Reference" "R33"
+			(at 76.2 87.63 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Value" "1K"
+			(at 76.2 90.17 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Footprint" "Resistor_SMD:R_0603_1608Metric"
+			(at 76.2 92.202 90)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 76.2 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Resistor"
+			(at 76.2 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Supplier Part" "C22548"
+			(at 76.2 93.98 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(pin "1"
+			(uuid "6bbe750f-2d3f-43a4-9881-576a7789c5d2")
+		)
+		(pin "2"
+			(uuid "a09e1645-3084-470c-a5f7-6d2351878b1e")
+		)
+		(instances
+			(project "capacitor-alarm-clock"
+				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f/ebe10c23-19f6-433f-9285-78aaa5e0ae9a"
+					(reference "R33")
 					(unit 1)
 				)
 			)

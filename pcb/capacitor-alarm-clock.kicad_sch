@@ -987,6 +987,89 @@
 			)
 			(embedded_fonts no)
 		)
+		(symbol "Mechanical:MountingHole"
+			(pin_names
+				(offset 1.016)
+			)
+			(exclude_from_sim no)
+			(in_bom no)
+			(on_board yes)
+			(property "Reference" "H"
+				(at 0 5.08 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Value" "MountingHole"
+				(at 0 3.175 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+				)
+			)
+			(property "Footprint" ""
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Datasheet" "~"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "Description" "Mounting Hole without connection"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_keywords" "mounting hole"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(property "ki_fp_filters" "MountingHole*"
+				(at 0 0 0)
+				(effects
+					(font
+						(size 1.27 1.27)
+					)
+					(hide yes)
+				)
+			)
+			(symbol "MountingHole_0_1"
+				(circle
+					(center 0 0)
+					(radius 1.27)
+					(stroke
+						(width 1.27)
+						(type default)
+					)
+					(fill
+						(type none)
+					)
+				)
+			)
+			(embedded_fonts no)
+		)
 		(symbol "power:+3V3"
 			(power)
 			(pin_numbers
@@ -1573,7 +1656,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 54.61) (xy 138.43 54.61)
+			(xy 135.89 54.61) (xy 138.43 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1623,7 +1706,7 @@
 	)
 	(wire
 		(pts
-			(xy 134.62 45.72) (xy 134.62 54.61)
+			(xy 135.89 45.72) (xy 135.89 54.61)
 		)
 		(stroke
 			(width 0)
@@ -1703,7 +1786,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 57.15) (xy 138.43 57.15)
+			(xy 133.35 57.15) (xy 138.43 57.15)
 		)
 		(stroke
 			(width 0)
@@ -1953,7 +2036,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 45.72) (xy 134.62 45.72)
+			(xy 128.27 45.72) (xy 135.89 45.72)
 		)
 		(stroke
 			(width 0)
@@ -1970,6 +2053,16 @@
 			(type default)
 		)
 		(uuid "8d4249f0-ec9f-4f4a-8461-5a16068c4014")
+	)
+	(wire
+		(pts
+			(xy 130.81 59.69) (xy 138.43 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "91eb8b5e-ddef-4138-bc2b-f483c7b2b6f1")
 	)
 	(wire
 		(pts
@@ -2043,6 +2136,16 @@
 	)
 	(wire
 		(pts
+			(xy 130.81 50.8) (xy 130.81 59.69)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "c4fd578e-e420-4d95-b09f-bf0744c57b0d")
+	)
+	(wire
+		(pts
 			(xy 132.08 87.63) (xy 132.08 90.17)
 		)
 		(stroke
@@ -2060,6 +2163,16 @@
 			(type default)
 		)
 		(uuid "cd7be078-67bf-4c85-8cf2-0b1b1135ec29")
+	)
+	(wire
+		(pts
+			(xy 128.27 50.8) (xy 130.81 50.8)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "d4cfa7cb-8058-4fe4-b44a-c6165d96b6a8")
 	)
 	(wire
 		(pts
@@ -2163,7 +2276,7 @@
 	)
 	(wire
 		(pts
-			(xy 132.08 48.26) (xy 132.08 57.15)
+			(xy 133.35 48.26) (xy 133.35 57.15)
 		)
 		(stroke
 			(width 0)
@@ -2183,7 +2296,7 @@
 	)
 	(wire
 		(pts
-			(xy 128.27 48.26) (xy 132.08 48.26)
+			(xy 128.27 48.26) (xy 133.35 48.26)
 		)
 		(stroke
 			(width 0)
@@ -2599,6 +2712,70 @@
 			(project "capacitor-alarm-clock"
 				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f"
 					(reference "SW2")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 185.42 43.18 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "29a11ba4-25ba-4a05-a183-9d0dd8e5f11c")
+		(property "Reference" "H9"
+			(at 187.96 41.9099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_2.2mm_M2"
+			(at 187.96 44.4499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 185.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 185.42 43.18 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "capacitor-alarm-clock"
+				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f"
+					(reference "H9")
 					(unit 1)
 				)
 			)
@@ -3656,6 +3833,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 185.42 49.53 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "ab4f28c8-bd99-4450-bfde-70eb0c36ceea")
+		(property "Reference" "H10"
+			(at 187.96 48.2599 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_2.2mm_M2"
+			(at 187.96 50.7999 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 185.42 49.53 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "capacitor-alarm-clock"
+				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f"
+					(reference "H10")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "power:VCC")
 		(at 49.53 76.2 0)
 		(unit 1)
@@ -4078,6 +4319,70 @@
 		)
 	)
 	(symbol
+		(lib_id "Mechanical:MountingHole")
+		(at 185.42 55.88 0)
+		(unit 1)
+		(exclude_from_sim no)
+		(in_bom no)
+		(on_board yes)
+		(dnp no)
+		(fields_autoplaced yes)
+		(uuid "e772a79d-d6e5-45f2-afbc-1893280bbcb2")
+		(property "Reference" "H11"
+			(at 187.96 54.6099 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Value" "MountingHole_2.2mm_M2"
+			(at 187.96 57.1499 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
+		(property "Footprint" "MountingHole:MountingHole_2.2mm_M2"
+			(at 185.42 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Datasheet" "~"
+			(at 185.42 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(property "Description" "Mounting Hole without connection"
+			(at 185.42 55.88 0)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(hide yes)
+			)
+		)
+		(instances
+			(project "capacitor-alarm-clock"
+				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f"
+					(reference "H11")
+					(unit 1)
+				)
+			)
+		)
+	)
+	(symbol
 		(lib_id "EasyEDA_Lib:HT7333-1-MS_C7434186")
 		(at 95.25 139.7 0)
 		(unit 1)
@@ -4381,7 +4686,7 @@
 	)
 	(sheet
 		(at 138.43 52.07)
-		(size 19.05 7.62)
+		(size 19.05 10.16)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4405,7 +4710,7 @@
 			)
 		)
 		(property "Sheetfile" "display.kicad_sch"
-			(at 138.43 60.2746 0)
+			(at 138.43 62.8146 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4433,6 +4738,16 @@
 				(justify left)
 			)
 		)
+		(pin "RESET" input
+			(at 138.43 59.69 180)
+			(uuid "4aabe5a5-657b-447b-bbfe-619caf5a1028")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify left)
+			)
+		)
 		(instances
 			(project "capacitor-alarm-clock"
 				(path "/04b8bb56-25a8-431d-accc-900ca88fd18f"
@@ -4443,7 +4758,7 @@
 	)
 	(sheet
 		(at 105.41 35.56)
-		(size 22.86 15.24)
+		(size 22.86 17.78)
 		(exclude_from_sim no)
 		(in_bom yes)
 		(on_board yes)
@@ -4467,7 +4782,7 @@
 			)
 		)
 		(property "Sheetfile" "esp32.kicad_sch"
-			(at 105.41 51.3846 0)
+			(at 105.41 53.9246 0)
 			(effects
 				(font
 					(size 1.27 1.27)
@@ -4573,6 +4888,16 @@
 					(size 1.27 1.27)
 				)
 				(justify left)
+			)
+		)
+		(pin "I2C_RST" output
+			(at 128.27 50.8 0)
+			(uuid "6e86fe7c-5439-4dcb-9f16-9d56b8311e3a")
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+				(justify right)
 			)
 		)
 		(instances

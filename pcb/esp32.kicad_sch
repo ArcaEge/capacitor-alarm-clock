@@ -2657,6 +2657,16 @@
 	)
 	(wire
 		(pts
+			(xy 88.9 87.63) (xy 101.6 87.63)
+		)
+		(stroke
+			(width 0)
+			(type default)
+		)
+		(uuid "3d5c864c-c378-4778-be34-b1dfe8b952be")
+	)
+	(wire
+		(pts
 			(xy 44.45 52.07) (xy 44.45 54.61)
 		)
 		(stroke
@@ -2774,16 +2784,6 @@
 			(type default)
 		)
 		(uuid "4dfe4c5d-4ee6-49b8-b640-8669b557dab0")
-	)
-	(wire
-		(pts
-			(xy 91.44 87.63) (xy 101.6 87.63)
-		)
-		(stroke
-			(width 0)
-			(type default)
-		)
-		(uuid "4e0e0911-74ac-451a-9624-3d972310fe1c")
 	)
 	(wire
 		(pts
@@ -3961,6 +3961,17 @@
 			(justify right)
 		)
 		(uuid "78ed3fc7-15d7-4869-9f06-73672220d850")
+	)
+	(hierarchical_label "I2C_RST"
+		(shape output)
+		(at 88.9 87.63 180)
+		(effects
+			(font
+				(size 1.27 1.27)
+			)
+			(justify right)
+		)
+		(uuid "be926c28-fbbd-446b-9077-20993ed50b05")
 	)
 	(hierarchical_label "RELAY2"
 		(shape output)
