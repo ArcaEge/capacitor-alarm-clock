@@ -44,52 +44,54 @@ void setup() {
 
     display_init();
 
-    // Time
-#ifndef BUILD_TEST_ESP8266
-    sntp_set_time_sync_notification_cb(timeavailable);
-#endif
-    sntp_servermode_dhcp(1);
-    configTzTime(time_zone, ntpServer1, ntpServer2);
+//     // Time
+// #ifndef BUILD_TEST_ESP8266
+//     sntp_set_time_sync_notification_cb(timeavailable);
+// #endif
+//     sntp_servermode_dhcp(1);
+//     configTzTime(time_zone, ntpServer1, ntpServer2);
 
-    WiFi.mode(WIFI_STA);
-    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
+//     WiFi.mode(WIFI_STA);
+//     WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 
-    // Wait for connection
-    while (WiFi.status() != WL_CONNECTED) {
-        delay(500);
-        Serial.print(".");
-    }
+//     // Wait for connection
+//     while (WiFi.status() != WL_CONNECTED) {
+//         delay(500);
+//         Serial.print(".");
+//     }
 
-    Serial.println("");
-    Serial.print("Connected to ");
-    Serial.println(WIFI_SSID);
-    Serial.print("IP address: ");
-    Serial.println(WiFi.localIP());
+//     Serial.println("");
+//     Serial.print("Connected to ");
+//     Serial.println(WIFI_SSID);
+//     Serial.print("IP address: ");
+//     Serial.println(WiFi.localIP());
 
-    if (MDNS.begin("capacitor-alarm-clock")) {
-        Serial.println("MDNS responder started");
-    }
+//     if (MDNS.begin("capacitor-alarm-clock")) {
+//         Serial.println("MDNS responder started");
+//     }
 }
 
 void loop() {
     display_loop();
+
+    delay(500);
 }
 
-// Callback function (gets called when time adjusts via NTP)
-void timeavailable(struct timeval* t) {
-    Serial.println("Got time adjustment from NTP!");
-    printLocalTime();
-}
+// // Callback function (gets called when time adjusts via NTP)
+// void timeavailable(struct timeval* t) {
+//     Serial.println("Got time adjustment from NTP!");
+//     printLocalTime();
+// }
 
-void printLocalTime() {
-    struct tm timeinfo;
-    if (!getLocalTime(&timeinfo)) {
-        Serial.println("No time available (yet)");
-        return;
-    }
-    Serial.print(timeinfo.tm_hour);
-    Serial.print(":");
-    Serial.print(timeinfo.tm_min);
-    Serial.print(":");
-    Serial.println(timeinfo.tm_sec);
-}
+// void printLocalTime() {
+//     struct tm timeinfo;
+//     if (!getLocalTime(&timeinfo)) {
+//         Serial.println("No time available (yet)");
+//         return;
+//     }
+//     Serial.print(timeinfo.tm_hour);
+//     Serial.print(":");
+//     Serial.print(timeinfo.tm_min);
+//     Serial.print(":");
+//     Serial.println(timeinfo.tm_sec);
+// }
