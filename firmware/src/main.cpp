@@ -1,83 +1,95 @@
 #include <Arduino.h>
-#include <ESPmDNS.h>
-#include <U8g2lib.h>
-#include <WebServer.h>
-#include <WiFi.h>
+#include <Preferences.h>
 #include <WiFiClient.h>
 #include <Wire.h>
 
+#include "display.hpp"
+#include "secrets.h"
 #include "sntp.h"
 #include "time.h"
 
-#define SDA 4
-#define SCL 5
-#define SSD_RESET 2
-
-const char* ssid = "........";
-const char* password = "........";
+#ifndef BUILD_TEST_ESP8266
+// Building for final PCB
+#include <ESPmDNS.h>
+#include <WebServer.h>
+#include <WiFi.h>
+#else
+// Building for test ESP8266
+#include <ESP8266WebServer.h>
+#include <ESP8266WiFi.h>
+#include <ESP8266mDNS.h>
+#endif
 
 const char* ntpServer1 = "pool.ntp.org";
 const char* ntpServer2 = "time.nist.gov";
-const long gmtOffset_sec = 3600;
-const int daylightOffset_sec = 3600;
-const char* time_zone = "GMT0BST,M3.5.0/1,M10.5.0";  // POSIX string for Europe/London
 
-U8G2_SSD1315_128X64_NONAME_F_HW_I2C u8g2(U8G2_R0, SSD_RESET, SCL, SDA);
+// POSIX string for Europe/London
+// full list at https://github.com/esp8266/Arduino/blob/master/cores/esp8266/TZ.h for other timezones :)
+const char* time_zone = "GMT0BST,M3.5.0/1,M10.5.0";
+
+#ifndef BUILD_TEST_ESP8266
 WebServer server(80);
+#else
+ESP8266WebServer server(80);
+#endif
+
+Preferences prefs;
 
 // Functions
 void timeavailable(struct timeval* t);
 void printLocalTime();
 
 void setup() {
-  u8g2.begin();
+    Serial.begin(115200);
 
-  // Time
-  sntp_set_time_sync_notification_cb(timeavailable);
-  sntp_servermode_dhcp(1);
-  configTime(gmtOffset_sec, daylightOffset_sec, ntpServer1, ntpServer2);
+    display_init();
 
-  Serial.begin(115200);
-  WiFi.mode(WIFI_STA);
-  WiFi.begin(ssid, password);
+    // Time
+#ifndef BUILD_TEST_ESP8266
+    sntp_set_time_sync_notification_cb(timeavailable);
+#endif
+    sntp_servermode_dhcp(1);
+    configTzTime(time_zone, ntpServer1, ntpServer2);
 
-  // Wait for connection
-  while (WiFi.status() != WL_CONNECTED) {
-    delay(500);
-    Serial.print(".");
-  }
+    WiFi.mode(WIFI_STA);
+    WiFi.begin(WIFI_SSID, WIFI_PASSWORD);
 
-  Serial.println("");
-  Serial.print("Connected to ");
-  Serial.println(ssid);
-  Serial.print("IP address: ");
-  Serial.println(WiFi.localIP());
+    // Wait for connection
+    while (WiFi.status() != WL_CONNECTED) {
+        delay(500);
+        Serial.print(".");
+    }
 
-  if (MDNS.begin("capacitor-alarm-clock")) {
-    Serial.println("MDNS responder started");
-  }
+    Serial.println("");
+    Serial.print("Connected to ");
+    Serial.println(WIFI_SSID);
+    Serial.print("IP address: ");
+    Serial.println(WiFi.localIP());
+
+    if (MDNS.begin("capacitor-alarm-clock")) {
+        Serial.println("MDNS responder started");
+    }
 }
 
 void loop() {
-  u8g2.firstPage();
-
-  do {
-    u8g2.setFont(u8g2_font_ncenB14_tr);
-    u8g2.drawStr(0, 20, "Hello World!");
-  } while (u8g2.nextPage());
+    display_loop();
 }
 
 // Callback function (gets called when time adjusts via NTP)
 void timeavailable(struct timeval* t) {
-  Serial.println("Got time adjustment from NTP!");
-  printLocalTime();
+    Serial.println("Got time adjustment from NTP!");
+    printLocalTime();
 }
 
 void printLocalTime() {
-  struct tm timeinfo;
-  if (!getLocalTime(&timeinfo)) {
-    Serial.println("No time available (yet)");
-    return;
-  }
-  Serial.println(&timeinfo, "%A, %B %d %Y %H:%M:%S");
+    struct tm timeinfo;
+    if (!getLocalTime(&timeinfo)) {
+        Serial.println("No time available (yet)");
+        return;
+    }
+    Serial.print(timeinfo.tm_hour);
+    Serial.print(":");
+    Serial.print(timeinfo.tm_min);
+    Serial.print(":");
+    Serial.println(timeinfo.tm_sec);
 }
