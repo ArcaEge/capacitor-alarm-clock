@@ -34,7 +34,6 @@ ESP8266WebServer server(80);
 #endif
 
 Preferences prefs;
-State state;
 
 void setup() {
     Serial.begin(115200);

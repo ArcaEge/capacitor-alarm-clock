@@ -23,8 +23,8 @@ void display_loop(State& state) {
 
         sprintf(timebuf, "%02d:%02d:%02d", state.time.info.tm_hour, state.time.info.tm_min, state.time.info.tm_sec);
 
-        u8g2.setFont(u8g2_font_ncenB14_tr);
-        u8g2.drawStr(1, 25, timebuf);
+        u8g2.setFont(u8g2_font_spleen16x32_me);
+        u8g2.drawStr(0, 42, timebuf);
     }
 
     u8g2.sendBuffer();

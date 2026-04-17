@@ -7,9 +7,11 @@ struct State {
         bool previouslyConnected = false;
         IPAddress ip;
     } wifi;
-
+    
     struct {
         bool available = false;
         tm info;
     } time;
 };
+
+extern State state;
