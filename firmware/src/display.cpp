@@ -10,11 +10,22 @@ void display_init() {
     u8g2.begin();
 }
 
-void display_loop() {
+void display_loop(State& state) {
     u8g2.clearBuffer();
-
     u8g2.setFont(u8g2_font_5x8_tr);
-    u8g2.drawStr(1,10,"Hello world");
+    
+    if (!state.time.available) {
+        u8g2.drawStr(1, 10, "Loading time...");
+    } else {
+        u8g2.drawStr(1, 10, "Time available");
+
+        char timebuf[30];
+
+        sprintf(timebuf, "%02d:%02d:%02d", state.time.info.tm_hour, state.time.info.tm_min, state.time.info.tm_sec);
+
+        u8g2.setFont(u8g2_font_ncenB14_tr);
+        u8g2.drawStr(1, 25, timebuf);
+    }
 
     u8g2.sendBuffer();
 }

@@ -1,5 +1,7 @@
 #include <U8g2lib.h>
 
+#include "state.hpp"
+
 #ifndef BUILD_TEST_ESP8266
 // Building for final PCB
 #define SDA 4
@@ -13,4 +15,4 @@
 #endif
 
 void display_init();
-void display_loop();
+void display_loop(State& state);
