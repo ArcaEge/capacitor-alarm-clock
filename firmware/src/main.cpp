@@ -1,6 +1,7 @@
 #include "display.hpp"
 #include "includes.hpp"
 #include "secrets.h"
+#include "server.hpp"
 #include "state.hpp"
 
 const char* ntpServer1 = "pool.ntp.org";
@@ -18,9 +19,6 @@ const char* time_zone = "GMT0BST,M3.5.0/1,M10.5.0";
 #define RELAY_1 14
 #define RELAY_2 12
 #define RELAY_3 13
-
-WebServer server(80);
-
 #else
 // Building for test ESP8266
 #define BTN_L 10
@@ -29,11 +27,9 @@ WebServer server(80);
 #define RELAY_1 14
 #define RELAY_2 12
 #define RELAY_3 13
-
-ESP8266WebServer server(80);
 #endif
 
-Preferences prefs;
+int last100ms = 0;
 
 void setup() {
     Serial.begin(115200);
@@ -46,6 +42,16 @@ void setup() {
     pinMode(RELAY_3, OUTPUT);
 
     display_init();
+
+    // Load state
+    state.prefs.begin("capacitor-alarm-clock");
+
+    Serial.println("Loading schedule");
+    if (state.prefs.getBytes("schedule", &state.schedule, sizeof(state.schedule))) {
+        Serial.println("Schedule loaded");
+    } else {
+        Serial.println("No schedule exists, loaded empty schedule");
+    }
 
     // Time
 #ifndef BUILD_TEST_ESP8266
@@ -60,6 +66,11 @@ void setup() {
 }
 
 void loop() {
+    // Timing
+    int now = millis();
+    state.timing.elapsed100ms = false;
+    if (now - state.timing.last100ms >= 100) state.timing.elapsed100ms = true;
+
     state.wifi.connected = WiFi.status() == WL_CONNECTED;
 
     if (state.wifi.connected) {
@@ -75,9 +86,13 @@ void loop() {
             if (MDNS.begin("capacitor-alarm-clock")) {
                 Serial.println("MDNS responder started");
             }
+
+            server_init(state);
         }
 
         state.wifi.previouslyConnected = true;
+
+        server_handle();
     }
 
     if (state.wifi.previouslyConnected)
@@ -85,5 +100,5 @@ void loop() {
 
     display_loop(state);
 
-    delay(100);
+    delay(2);
 }

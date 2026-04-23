@@ -19,7 +19,7 @@ void display_loop(State& state) {
     } else {
         u8g2.drawStr(1, 10, "Time available");
 
-        char timebuf[30];
+        char timebuf[9];
 
         sprintf(timebuf, "%02d:%02d:%02d", state.time.info.tm_hour, state.time.info.tm_min, state.time.info.tm_sec);
 

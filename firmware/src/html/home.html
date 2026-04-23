@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    <head>
+        <title>Capacitor Alarm Clock</title>
+    </head>
+    <body>
+        <h3>capacitor alarm clock configuration</h3>
+        <hr />
+        <form
+            method="POST"
+            enctype="application/x-www-form-urlencoded"
+            action="/schedule"
+        >
+            <label for="input-time">Time:</label>
+            <br />
+            <input type="time" id="input-time" required />
+            <br />
+            <br />
+            <label for="input-time">Days of week:</label>
+            <br />
+            <select multiple style="height: 150px; width: 120px;">
+              <option value="0">Monday</option>
+              <option value="1">Tuesday</option>
+              <option value="2">Wednesday</option>
+              <option value="3">Thursday</option>
+              <option value="4">Friday</option>
+              <option value="5">Saturday</option>
+              <option value="6">Sunday</option>
+            </select>
+            <br />
+            <br />
+            <input type="submit" value="Set schedule" />
+        </form>
+        <hr />
+    </body>
+</html>
