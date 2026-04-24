@@ -3,6 +3,8 @@
 #include "secrets.h"
 #include "server.hpp"
 #include "state.hpp"
+#include "alarm.hpp"
+#include "inputs.hpp"
 
 const char* ntpServer1 = "pool.ntp.org";
 const char* ntpServer2 = "time.nist.gov";
@@ -11,36 +13,11 @@ const char* ntpServer2 = "time.nist.gov";
 // full list at https://github.com/esp8266/Arduino/blob/master/cores/esp8266/TZ.h for other timezones :)
 const char* time_zone = "GMT0BST,M3.5.0/1,M10.5.0";
 
-#ifndef BUILD_TEST_ESP8266
-// Building for PCB
-#define BTN_L 10
-#define BTN_R 9
-
-#define RELAY_1 14
-#define RELAY_2 12
-#define RELAY_3 13
-#else
-// Building for test ESP8266
-#define BTN_L 10
-#define BTN_R 9
-
-#define RELAY_1 14
-#define RELAY_2 12
-#define RELAY_3 13
-#endif
-
-int last100ms = 0;
-
 void setup() {
     Serial.begin(115200);
 
-    pinMode(BTN_L, INPUT);
-    pinMode(BTN_R, INPUT);
-
-    pinMode(RELAY_1, OUTPUT);
-    pinMode(RELAY_2, OUTPUT);
-    pinMode(RELAY_3, OUTPUT);
-
+    inputs_init();
+    alarm_init();
     display_init();
 
     // Load state
@@ -73,6 +50,8 @@ void loop() {
 
     state.wifi.connected = WiFi.status() == WL_CONNECTED;
 
+    inputs_loop(state);
+
     if (state.wifi.connected) {
         state.wifi.ip = WiFi.localIP();
 
@@ -98,6 +77,7 @@ void loop() {
     if (state.wifi.previouslyConnected)
         state.time.available = getLocalTime(&state.time.info);
 
+    alarm_loop(state);
     display_loop(state);
 
     delay(2);

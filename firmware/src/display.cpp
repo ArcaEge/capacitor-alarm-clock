@@ -12,20 +12,28 @@ void display_init() {
 
 void display_loop(State& state) {
     u8g2.clearBuffer();
-    u8g2.setFont(u8g2_font_5x8_tr);
-    
-    if (!state.time.available) {
-        u8g2.drawStr(1, 10, "Loading time...");
+    u8g2.setFont(u8g2_font_siji_t_6x10);
+
+    if (!state.wifi.connected) {
+        u8g2.drawGlyph(116, 10, 0xe217);
     } else {
-        u8g2.drawStr(1, 10, "Time available");
-
-        char timebuf[9];
-
-        sprintf(timebuf, "%02d:%02d:%02d", state.time.info.tm_hour, state.time.info.tm_min, state.time.info.tm_sec);
-
-        u8g2.setFont(u8g2_font_spleen16x32_me);
-        u8g2.drawStr(0, 42, timebuf);
+        u8g2.drawGlyph(116, 10, 0xe21a);
     }
+    
+    _display_draw_time(state);
 
     u8g2.sendBuffer();
+}
+
+void _display_draw_time(State& state) {
+    char timebuf[9];
+
+    if (state.time.available) {
+        sprintf(timebuf, "%02d:%02d:%02d", state.time.info.tm_hour, state.time.info.tm_min, state.time.info.tm_sec);
+    } else {
+        sprintf(timebuf, "--:--:--");
+    }
+
+    u8g2.setFont(u8g2_font_spleen16x32_me);
+    u8g2.drawStr(0, 42, timebuf);
 }

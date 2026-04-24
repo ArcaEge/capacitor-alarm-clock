@@ -40,6 +40,10 @@ void handleRoot(State& state) {
                 method=\"POST\"\
                 action=\"/schedule\"\
             >\
+                <input type=\"checkbox\" id=\"enabled\" name=\"enabled\"" + String(state.schedule.enabled ? " checked" : "") + "/>\
+                <label for=\"enabled\">Enabled</label>\
+                <br />\
+                <br />\
                 <label for=\"input-time\">Time:</label>\
                 <br />\
                 <input type=\"time\" id=\"input-time\" name=\"time\" required value=\"" + String(time) + "\"/>\
@@ -71,6 +75,7 @@ void handleRoot(State& state) {
 void handleSchedulePOST(State& state) {
     if (server.method() != HTTP_POST) server.send(405, "text/plain", "Method Not Allowed");
 
+    bool enabled = false;
     bool daysOfWeek[7] = {};
 
     for (uint8_t i = 0; i < server.args(); i++) {
@@ -97,9 +102,12 @@ void handleSchedulePOST(State& state) {
             }
 
             daysOfWeek[dayOfWeek] = true;
+        } else if (argName == "enabled") {
+            enabled = arg == "on";
         }
     }
 
+    state.schedule.enabled = enabled;
     memcpy(state.schedule.weekSchedule, daysOfWeek, 7);
     state.prefs.putBytes("schedule", &state.schedule, sizeof(state.schedule));
 

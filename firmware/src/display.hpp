@@ -1,4 +1,5 @@
 #include <U8g2lib.h>
+#include <MUIU8g2.h>
 
 #include "state.hpp"
 
@@ -16,3 +17,5 @@
 
 void display_init();
 void display_loop(State& state);
+
+void _display_draw_time(State& state);
