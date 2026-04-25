@@ -18,7 +18,7 @@ void setup() {
 
     inputs_init();
     alarm_init();
-    display_init();
+    display_init(state);
 
     // Load state
     state.prefs.begin("capacitor-alarm-clock");

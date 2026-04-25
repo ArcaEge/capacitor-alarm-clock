@@ -1,5 +1,5 @@
 #include <U8g2lib.h>
-#include <MUIU8g2.h>
+#include <MUIU8g2.hpp>
 
 #include "state.hpp"
 
@@ -15,7 +15,7 @@
 #define SSD_RESET U8X8_PIN_NONE
 #endif
 
-void display_init();
+void display_init(State& state);
 void display_loop(State& state);
 
 void _display_draw_time(State& state);

@@ -1,5 +1,6 @@
 #pragma once
 #include "includes.hpp"
+#include <MUIU8g2.hpp>
 
 enum alarmState { ALARM_PENDING,
                   ALARM_TRIGGERING };
@@ -22,6 +23,7 @@ struct State {
     } timing;
 
     Preferences prefs;
+    MUIU8G2 mui;
 
     struct {
         bool enabled = true;
