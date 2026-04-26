@@ -2,9 +2,6 @@
 #include "includes.hpp"
 #include <MUIU8g2.hpp>
 
-enum alarmState { ALARM_PENDING,
-                  ALARM_TRIGGERING };
-
 struct State {
     struct {
         bool connected = false;
@@ -26,17 +23,21 @@ struct State {
     MUIU8G2 mui;
 
     struct {
-        bool enabled = true;
         struct {
-            int hours = 0;
-            int minutes = 0;
-        } time;
-        bool weekSchedule[7] = {false};
-    } schedule;
+            bool enabled = true;
+            struct {
+                uint8_t hours = 0;
+                uint8_t minutes = 0;
+            } time;
+            bool weekSchedule[7] = {false};
+        } schedule;
+
+        uint8_t nextSlot = 1;
+    } persistent;
 
     struct {
-        // 0 to 2, index of the next slot to go off (to avoid triggering already exploded slot)
-        int nextSlot = 0;
+        bool skipNext = false;
+        bool alarmTriggering = false;
     } alarm;
 
     struct {

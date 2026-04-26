@@ -25,7 +25,7 @@ void server_handle() {
 
 void handleRoot(State& state) {
     char time[6];
-    sprintf(time, "%02d:%02d", state.schedule.time.hours, state.schedule.time.minutes);
+    sprintf(time, "%02d:%02d", state.persistent.schedule.time.hours, state.persistent.schedule.time.minutes);
 
     const String homeHtml =
         "<!DOCTYPE html>\
@@ -39,26 +39,66 @@ void handleRoot(State& state) {
             <form\
                 method=\"POST\"\
                 action=\"/schedule\"\
+                autocomplete=\"off\"\
             >\
-                <input type=\"checkbox\" id=\"enabled\" name=\"enabled\"" + String(state.schedule.enabled ? " checked" : "") + "/>\
+                <input type=\"checkbox\" id=\"enabled\" name=\"enabled\"" +
+        String(state.persistent.schedule.enabled ? " checked" : "") +
+        "/>\
                 <label for=\"enabled\">Enabled</label>\
+                <br />\
+                <br />\
+                <input type=\"checkbox\" id=\"skip-next\" name=\"skip-next\"" +
+        String(state.alarm.skipNext ? " checked" : "") +
+        "/>\
+                <label for=\"skip-next\">Skip next</label>\
+                <br />\
+                <br />\
+                <label for=\"cap-slot-select\">Next capacitor slot:</label>\
+                <br />\
+                <select id=\"cap-slot-select\" name=\"cap-slot\">\
+                  <option value=\"1\"" +
+        (state.persistent.nextSlot == 1 ? "selected" : "") +
+        ">CAP1</option>\
+                  <option value=\"2\"" +
+        (state.persistent.nextSlot == 2 ? "selected" : "") +
+        ">CAP2</option>\
+                  <option value=\"3\"" +
+        (state.persistent.nextSlot == 3 ? "selected" : "") +
+        ">CAP3</option>\
+                </select>\
                 <br />\
                 <br />\
                 <label for=\"input-time\">Time:</label>\
                 <br />\
-                <input type=\"time\" id=\"input-time\" name=\"time\" required value=\"" + String(time) + "\"/>\
+                <input type=\"time\" id=\"input-time\" name=\"time\" required value=\"" +
+        String(time) +
+        "\"/>\
                 <br />\
                 <br />\
                 <label for=\"days-select\">Days of week:</label>\
                 <br />\
                 <select multiple style=\"height: 150px; width: 120px;\" id=\"days-select\" name=\"days\">\
-                  <option value=\"0\"" + (state.schedule.weekSchedule[0] ? "selected" : "") + ">Monday</option>\
-                  <option value=\"1\"" + (state.schedule.weekSchedule[1] ? "selected" : "") + ">Tuesday</option>\
-                  <option value=\"2\"" + (state.schedule.weekSchedule[2] ? "selected" : "") + ">Wednesday</option>\
-                  <option value=\"3\"" + (state.schedule.weekSchedule[3] ? "selected" : "") + ">Thursday</option>\
-                  <option value=\"4\"" + (state.schedule.weekSchedule[4] ? "selected" : "") + ">Friday</option>\
-                  <option value=\"5\"" + (state.schedule.weekSchedule[5] ? "selected" : "") + ">Saturday</option>\
-                  <option value=\"6\"" + (state.schedule.weekSchedule[6] ? "selected" : "") + ">Sunday</option>\
+                  <option value=\"0\"" +
+        (state.persistent.schedule.weekSchedule[0] ? "selected" : "") +
+        ">Monday</option>\
+                  <option value=\"1\"" +
+        (state.persistent.schedule.weekSchedule[1] ? "selected" : "") +
+        ">Tuesday</option>\
+                  <option value=\"2\"" +
+        (state.persistent.schedule.weekSchedule[2] ? "selected" : "") +
+        ">Wednesday</option>\
+                  <option value=\"3\"" +
+        (state.persistent.schedule.weekSchedule[3] ? "selected" : "") +
+        ">Thursday</option>\
+                  <option value=\"4\"" +
+        (state.persistent.schedule.weekSchedule[4] ? "selected" : "") +
+        ">Friday</option>\
+                  <option value=\"5\"" +
+        (state.persistent.schedule.weekSchedule[5] ? "selected" : "") +
+        ">Saturday</option>\
+                  <option value=\"6\"" +
+        (state.persistent.schedule.weekSchedule[6] ? "selected" : "") +
+        ">Sunday</option>\
                 </select>\
                 <br />\
                 <br />\
@@ -76,6 +116,8 @@ void handleSchedulePOST(State& state) {
     if (server.method() != HTTP_POST) server.send(405, "text/plain", "Method Not Allowed");
 
     bool enabled = false;
+    bool skipNext = false;
+    uint8_t nextSlot = 1;
     bool daysOfWeek[7] = {};
 
     for (uint8_t i = 0; i < server.args(); i++) {
@@ -89,9 +131,9 @@ void handleSchedulePOST(State& state) {
             }
 
             String hours = arg.substring(0, 2);
-            state.schedule.time.hours = hours.toInt();
+            state.persistent.schedule.time.hours = hours.toInt();
             String minutes = arg.substring(3, 5);
-            state.schedule.time.minutes = minutes.toInt();
+            state.persistent.schedule.time.minutes = minutes.toInt();
 
         } else if (argName == "days") {
             int dayOfWeek = arg.toInt();
@@ -104,12 +146,22 @@ void handleSchedulePOST(State& state) {
             daysOfWeek[dayOfWeek] = true;
         } else if (argName == "enabled") {
             enabled = arg == "on";
+        } else if (argName == "skip-next") {
+            skipNext = arg == "on";
+        } else if (argName == "cap-slot-select") {
+            nextSlot = arg.toInt();
+
+            if (nextSlot < 1 || nextSlot > 3) {
+                server.send(400, "text/plain", "Bad Request: invalid capacitor slot");
+                return;
+            }
         }
     }
 
-    state.schedule.enabled = enabled;
-    memcpy(state.schedule.weekSchedule, daysOfWeek, 7);
-    state.prefs.putBytes("schedule", &state.schedule, sizeof(state.schedule));
+    state.persistent.schedule.enabled = enabled;
+    state.alarm.skipNext = skipNext;
+    memcpy(state.persistent.schedule.weekSchedule, daysOfWeek, 7);
+    state.prefs.putBytes("persistent", &state.persistent, sizeof(state.persistent));
 
     server.sendHeader("Location", "/");
     server.send(307, "text/plain", "");

@@ -14,21 +14,17 @@ void inputs_loop(State& state) {
         // Trigger select event
         state.input.events.select = true;
         state.input.raw.bothPressed = true;
-        Serial.println("Select");
     } else if (!left && !right && state.input.raw.bothPressed) {
         // Both released
         state.input.raw.bothPressed = false;
-        Serial.println("Double release");
     } else {
         if (state.input.raw.leftLast && !left && !state.input.raw.bothPressed) {
             // Left released
             state.input.events.prev = true;
-            Serial.println("Prev");
         }
         if (state.input.raw.rightLast && !right && !state.input.raw.bothPressed) {
             // Right released
             state.input.events.next = true;
-            Serial.println("Next");
         }
     }
 

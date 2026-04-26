@@ -24,7 +24,7 @@ void setup() {
     state.prefs.begin("capacitor-alarm-clock");
 
     Serial.println("Loading schedule");
-    if (state.prefs.getBytes("schedule", &state.schedule, sizeof(state.schedule))) {
+    if (state.prefs.getBytes("persistent", &state.persistent, sizeof(state.persistent))) {
         Serial.println("Schedule loaded");
     } else {
         Serial.println("No schedule exists, loaded empty schedule");
