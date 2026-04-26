@@ -160,10 +160,38 @@ void display_loop(State& state) {
             u8g2.drawGlyph(116, 10, 0xe21a);
         }
 
+        if (state.persistent.schedule.enabled) {
+            u8g2.drawGlyph(0, 10, 0xe203);
+        } else {
+            u8g2.drawGlyph(0, 10, 0xe202);
+        }
+
+        u8g2.drawGlyph(12, 10, 0xe15f + state.persistent.nextSlot);
+
+        if (state.alarm.skipNext) {
+            u8g2.drawGlyph(24, 10, 0xe09d);
+        }
+
         _display_draw_time(state);
+        _display_draw_date(state);
     }
 
     u8g2.sendBuffer();
+}
+
+void _display_draw_date(State& state) {
+    const char daysOfWeek[][4] = {"Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"};
+    const char months[][4] = {"Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"};
+    char datebuf[20];
+
+    if (state.time.available) {
+        sprintf(datebuf, "%s, %02d %s", daysOfWeek[state.time.info.tm_wday], state.time.info.tm_mday, months[state.time.info.tm_mon]);
+    } else {
+        sprintf(datebuf, "Loading date");
+    }
+
+    u8g2.setFont(u8g2_font_helvR08_tr);
+    u8g2.drawStr(35, 25, datebuf);
 }
 
 void _display_draw_time(State& state) {
@@ -176,7 +204,7 @@ void _display_draw_time(State& state) {
     }
 
     u8g2.setFont(u8g2_font_spleen16x32_me);
-    u8g2.drawStr(0, 42, timebuf);
+    u8g2.drawStr(0, 55, timebuf);
 }
 
 uint8_t _display_mui_hrule(mui_t* ui, uint8_t msg) {

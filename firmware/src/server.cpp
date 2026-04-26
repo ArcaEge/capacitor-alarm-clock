@@ -148,7 +148,7 @@ void handleSchedulePOST(State& state) {
             enabled = arg == "on";
         } else if (argName == "skip-next") {
             skipNext = arg == "on";
-        } else if (argName == "cap-slot-select") {
+        } else if (argName == "cap-slot") {
             nextSlot = arg.toInt();
 
             if (nextSlot < 1 || nextSlot > 3) {
@@ -159,6 +159,7 @@ void handleSchedulePOST(State& state) {
     }
 
     state.persistent.schedule.enabled = enabled;
+    state.persistent.nextSlot = nextSlot;
     state.alarm.skipNext = skipNext;
     memcpy(state.persistent.schedule.weekSchedule, daysOfWeek, 7);
     state.prefs.putBytes("persistent", &state.persistent, sizeof(state.persistent));
