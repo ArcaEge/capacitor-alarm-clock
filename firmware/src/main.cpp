@@ -30,11 +30,6 @@ void setup() {
         Serial.println("No schedule exists, loaded empty schedule");
     }
 
-    // Time
-#ifndef BUILD_TEST_ESP8266
-    sntp_set_time_sync_notification_cb(timeavailable);
-#endif
-
     sntp_servermode_dhcp(1);
     configTzTime(time_zone, ntpServer1, ntpServer2);
 
@@ -43,11 +38,6 @@ void setup() {
 }
 
 void loop() {
-    // Timing
-    int now = millis();
-    state.timing.elapsed100ms = false;
-    if (now - state.timing.last100ms >= 100) state.timing.elapsed100ms = true;
-
     state.wifi.connected = WiFi.status() == WL_CONNECTED;
 
     inputs_loop(state);

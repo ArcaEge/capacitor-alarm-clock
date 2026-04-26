@@ -14,11 +14,6 @@ struct State {
         tm info;
     } time;
 
-    struct {
-        int last100ms = 0;
-        bool elapsed100ms = false;
-    } timing;
-
     Preferences prefs;
     MUIU8G2 mui;
 
@@ -37,7 +32,11 @@ struct State {
 
     struct {
         bool skipNext = false;
-        bool alarmTriggering = false;
+        
+        unsigned long stopTriggerAt = 0;
+        unsigned long lastSkipAt = 0;
+
+        uint8_t currentSlot = 0;
     } alarm;
 
     struct {
