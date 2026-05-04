@@ -1,0 +1,6 @@
+#define WIFI_SSID ""
+#define WIFI_PASSWORD ""
+
+// POSIX string for Europe/London
+// full list at https://github.com/esp8266/Arduino/blob/master/cores/esp8266/TZ.h for other timezones
+#define TZ "GMT0BST,M3.5.0/1,M10.5.0"

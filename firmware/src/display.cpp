@@ -19,6 +19,7 @@ muif_t muif_list[] = {
     MUIF_U8G2_U8_MIN_MAX("NS", &state.persistent.nextSlot, 1, 3, mui_u8g2_u8_min_max_wm_mud_pi),
     MUIF_U8G2_U8_MIN_MAX("NH", &state.persistent.schedule.time.hours, 0, 23, mui_u8g2_u8_min_max_wm_mud_pi),
     MUIF_U8G2_U8_MIN_MAX("NM", &state.persistent.schedule.time.minutes, 0, 59, mui_u8g2_u8_min_max_wm_mud_pi),
+    MUIF_RO("IP", _display_mui_draw_ip),
 
     MUIF_VARIABLE("W0", &state.persistent.schedule.weekSchedule[0], mui_u8g2_u8_chkbox_wm_pi),
     MUIF_VARIABLE("W1", &state.persistent.schedule.weekSchedule[1], mui_u8g2_u8_chkbox_wm_pi),
@@ -44,6 +45,7 @@ MUI_FORM(1)
         MUI_10 "State|"
         MUI_20 "Time|"
         MUI_30 "Days of week|"
+        MUI_40 "About|"
         MUI_99 "Exit|")
     MUI_XYA("GC", 5, 25, 0)
     MUI_XYA("GC", 5, 37, 1)
@@ -92,14 +94,14 @@ MUI_FORM(20)
     MUI_STYLE(0)
     MUI_XY("NM", 68, 35)
     MUI_XYAT("SS", 64, 59, 1, " OK ")
-
-MUI_FORM(30)
+    
+    MUI_FORM(30)
     MUI_STYLE(1)
     MUI_LABEL(5, 10, "Days of week")
     MUI_XY("HR", 0, 13)
-
+    
     MUI_STYLE(0)
-
+    
     MUI_XY("W0", 1, 25)
     MUI_LABEL(11, 25, "Mon")
     MUI_XY("W1", 44, 25)
@@ -114,15 +116,27 @@ MUI_FORM(30)
     MUI_LABEL(95, 35, "Sat")
     MUI_XY("W6", 1, 45)
     MUI_LABEL(11, 45, "Sun")
-
+    
     MUI_XYAT("SS", 64, 59, 1, " OK ")
 
+MUI_FORM(40)
+    MUI_STYLE(1)
+    MUI_LABEL(5, 10, "About")
+    MUI_XY("HR", 0, 13)
+    
+    MUI_STYLE(0)
+    MUI_LABEL(0, 25, "IP:")
+    MUI_XY("IP", 32, 25)
+    MUI_LABEL(0, 35, "https://github.com/ArcaEge")
+    MUI_LABEL(24, 45, "/capacitor-alarm-clock")
+    MUI_XYAT("SS", 64, 59, 1, " OK ")
+    
 MUI_FORM(99)
     MUI_AUX("EX")
-;
-
-void display_init(State& state) {
-    u8g2.begin();
+    ;
+    
+    void display_init(State& state) {
+        u8g2.begin();
     state.mui.begin(u8g2, fds_data, muif_list, sizeof(muif_list) / sizeof(muif_t));
 }
 
@@ -212,6 +226,16 @@ uint8_t _display_mui_hrule(mui_t* ui, uint8_t msg) {
     switch (msg) {
         case MUIF_MSG_DRAW:
             u8g2_DrawHLine(u8g2, 0, mui_get_y(ui), u8g2_GetDisplayWidth(u8g2));
+            break;
+    }
+    return 0;
+}
+
+uint8_t _display_mui_draw_ip(mui_t* ui, uint8_t msg) {
+    u8g2_t* u8g2 = mui_get_U8g2(ui);
+    switch (msg) {
+        case MUIF_MSG_DRAW:
+            u8g2_DrawStr(u8g2, mui_get_x(ui), mui_get_y(ui), state.wifi.ip.toString().c_str());
             break;
     }
     return 0;

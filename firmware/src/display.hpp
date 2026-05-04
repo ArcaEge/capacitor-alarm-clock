@@ -22,5 +22,6 @@ void _display_draw_date(State& state);
 void _display_draw_time(State& state);
 
 uint8_t _display_mui_hrule(mui_t *ui, uint8_t msg);
+uint8_t _display_mui_draw_ip(mui_t *ui, uint8_t msg);
 uint8_t _display_mui_exit(mui_t* ui, uint8_t msg);
 uint8_t _display_mui_button_save_exit(mui_t *ui, uint8_t msg);

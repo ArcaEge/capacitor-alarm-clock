@@ -1,6 +1,6 @@
 #include "display.hpp"
 #include "includes.hpp"
-#include "secrets.h"
+#include "config.h"
 #include "server.hpp"
 #include "state.hpp"
 #include "alarm.hpp"
@@ -9,9 +9,7 @@
 const char* ntpServer1 = "pool.ntp.org";
 const char* ntpServer2 = "time.nist.gov";
 
-// POSIX string for Europe/London
-// full list at https://github.com/esp8266/Arduino/blob/master/cores/esp8266/TZ.h for other timezones :)
-const char* time_zone = "GMT0BST,M3.5.0/1,M10.5.0";
+const char* time_zone = TZ;
 
 void setup() {
     Serial.begin(115200);
