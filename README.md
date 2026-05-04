@@ -20,6 +20,15 @@
     <img src="assets/pcb/render.png" alt="PCB render" width="500" />
 </div>
 
+## Why?
+
+Why not?
+
+This was originally inspired by ElectroBOOM's [capacitor alarm video](https://www.youtube.com/watch?v=5dYt34JIDGw); this is like a safer (?), more practical and more useable-ish version of that.
+
+> [!WARNING]
+> Take care when using this, and only do so if you know what you're doing. Capacitor explosions are quite violent and the fumes aren't nice to breathe. This project is mostly a high-effort joke and not something practical to use
+
 ## Features
 
 - ESP32-powered
@@ -32,9 +41,6 @@
 - Power via USB-C or barrel jack (12-20V)
 - Small size (72x74x36mm)
 
-> [!WARNING]
-> Take care when using this, and only do so if you know what you're doing. Capacitor explosions are quite violent and the fumes aren't nice to breathe. This project is mostly a high-effort joke
-
 ## PCB
 
 Images of schematics and more are under the [PCB README](pcb/README.md). A BOM is available under [production](production/). I'd recommend using [JLCPCB](https://jlcpcb.com/) as they seem to have the lowest prices.
@@ -45,7 +51,7 @@ Images of schematics and more are under the [PCB README](pcb/README.md). A BOM i
 
 ## CAD files
 
-CAD files for the shell and PCB are under [`cad/`](cad/). The README there contains more info, but the Onshape project is available [here](https://cad.onshape.com/documents/62d468c7ff14a2e83cb50980/w/ededd05b0c271bca944a2c41/e/b2699bc116bdf7662263df84)
+CAD files for the shell and PCB are under [`cad/`](cad/). The README there contains more info, but the Onshape project is available [here](https://cad.onshape.com/documents/62d468c7ff14a2e83cb50980/w/ededd05b0c271bca944a2c41/e/b2699bc116bdf7662263df84).
 
 ## Building + flashing firmware
 
