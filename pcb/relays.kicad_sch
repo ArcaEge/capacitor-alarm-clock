@@ -3313,6 +3313,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C7499322.html"
+			(at 142.24 62.23 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e8921b42-31f7-40bf-a4a1-54ac0da69e16")
 		)
@@ -3395,6 +3406,39 @@
 		)
 		(property "Supplier Part" "C22548"
 			(at 114.3 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 114.3 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-071KL"
+			(at 114.3 59.69 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 114.3 59.69 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3541,6 +3585,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C82544.html"
+			(at 120.65 106.68 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "475005b1-39b4-421f-a6be-6e65f961f1a5")
 		)
@@ -3624,6 +3679,39 @@
 			)
 		)
 		(property "Supplier Part" "C98220"
+			(at 121.92 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 121.92 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-0710KL"
+			(at 121.92 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C98220.html"
 			(at 121.92 66.04 0)
 			(hide yes)
 			(show_name no)
@@ -3761,6 +3849,17 @@
 			)
 		)
 		(property "LCSC Part Name" "1x2P 间距:2.54mm 直插"
+			(at 214.63 63.5 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C7499322.html"
 			(at 214.63 63.5 0)
 			(hide yes)
 			(show_name no)
@@ -3983,6 +4082,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C45359464.html"
+			(at 60.96 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "4"
 			(uuid "78e16532-d4f9-445b-b681-a551121b19f6")
 		)
@@ -4072,6 +4182,39 @@
 			)
 		)
 		(property "Supplier Part" "C19702"
+			(at 72.39 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 72.39 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL10A106KP8NNNC"
+			(at 72.39 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C19702.html"
 			(at 72.39 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4253,6 +4396,39 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 121.92 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-0710KL"
+			(at 121.92 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C98220.html"
+			(at 121.92 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "85e2c9f6-06f5-47b1-8183-270dd25f30cf")
 		)
@@ -4336,6 +4512,39 @@
 			)
 		)
 		(property "Supplier Part" "C98220"
+			(at 194.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 194.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-0710KL"
+			(at 194.31 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C98220.html"
 			(at 194.31 67.31 0)
 			(hide yes)
 			(show_name no)
@@ -4439,6 +4648,39 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 107.95 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-071KL"
+			(at 107.95 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 107.95 66.04 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "148975b7-8702-46a2-b82e-225fd113f05b")
 		)
@@ -4532,6 +4774,39 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 180.34 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-071KL"
+			(at 180.34 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 180.34 67.31 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "f1c71202-bafd-4431-9f29-9a3c31014c81")
 		)
@@ -4614,6 +4889,39 @@
 		)
 		(property "Supplier Part" "C22548"
 			(at 114.3 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 114.3 125.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-071KL"
+			(at 114.3 125.73 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 114.3 125.73 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4838,6 +5146,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C225714.html"
+			(at 138.43 106.68 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "0540f949-6470-4e30-b560-b3374f9969a1")
 		)
@@ -4971,6 +5290,17 @@
 			)
 		)
 		(property "LCSC Part Name" "hfe=250~600 通用晶体管 NPN 电流:500mA 电压:45V"
+			(at 128.27 125.73 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C52801.html"
 			(at 128.27 125.73 0)
 			(hide yes)
 			(show_name no)
@@ -5121,6 +5451,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C225714.html"
+			(at 138.43 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "c563a658-4b15-4b30-a62d-eeac7b25a982")
 		)
@@ -5207,6 +5548,50 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 115.57 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 115.57 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "YLED0603R"
+			(at 115.57 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C19171390"
+			(at 115.57 72.39 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C19171390.html"
 			(at 115.57 72.39 0)
 			(hide yes)
 			(show_name no)
@@ -5432,6 +5817,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C82544.html"
+			(at 120.65 40.64 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "70552056-fe17-415d-87f5-affa273ab71d")
 		)
@@ -5582,6 +5978,50 @@
 			)
 		)
 		(property "Description" "Resistor"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "KNP3WS-10Ω±5% T"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C122149"
+			(at 154.94 109.22 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C122149.html"
 			(at 154.94 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -5752,6 +6192,50 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "KNP3WS-10Ω±5% T"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C122149"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C122149.html"
+			(at 154.94 43.18 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "87a78cee-2226-4627-be86-e12c98180b9d")
 		)
@@ -5835,6 +6319,39 @@
 			)
 		)
 		(property "Supplier Part" "C22548"
+			(at 107.95 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 107.95 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-071KL"
+			(at 107.95 132.08 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C22548.html"
 			(at 107.95 132.08 0)
 			(hide yes)
 			(show_name no)
@@ -5935,6 +6452,50 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 115.57 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "YLED0603R"
+			(at 115.57 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C19171390"
+			(at 115.57 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C19171390.html"
+			(at 115.57 138.43 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "a8c8f18e-ebb6-49dd-928a-16f77d064c78")
 		)
@@ -6015,6 +6576,50 @@
 			)
 		)
 		(property "Sim.Pins" "1=K 2=A"
+			(at 187.96 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 187.96 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "YLED0603R"
+			(at 187.96 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C19171390"
+			(at 187.96 73.66 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C19171390.html"
 			(at 187.96 73.66 0)
 			(hide yes)
 			(show_name no)
@@ -6272,6 +6877,39 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 186.69 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-071KL"
+			(at 186.69 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 186.69 60.96 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "dcddc2c4-a1fd-4d33-8f29-8a18b6ed2313")
 		)
@@ -6432,6 +7070,50 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 227.33 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "KNP3WS-10Ω±5% T"
+			(at 227.33 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part" "C122149"
+			(at 227.33 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C122149.html"
+			(at 227.33 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "e6ee9ba2-514f-4c21-982c-640937719440")
 		)
@@ -6559,6 +7241,17 @@
 			)
 		)
 		(property "LCSC Part Name" "hfe=250~600 通用晶体管 NPN 电流:500mA 电压:45V"
+			(at 200.66 60.96 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C52801.html"
 			(at 200.66 60.96 0)
 			(hide yes)
 			(show_name no)
@@ -6787,6 +7480,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C82544.html"
+			(at 193.04 41.91 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "60f22cfc-49ff-4f78-b8af-b4c416ffc405")
 		)
@@ -7002,6 +7706,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C225714.html"
+			(at 210.82 41.91 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "3"
 			(uuid "762cdea9-7e25-41d7-83d0-5327af365f30")
 		)
@@ -7145,6 +7860,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C52801.html"
+			(at 128.27 59.69 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "36a9e95c-7cfc-4b71-8df0-1fb881d5b0e7")
 		)
@@ -7231,6 +7957,39 @@
 			)
 		)
 		(property "Supplier Part" "C19702"
+			(at 36.83 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 36.83 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL10A106KP8NNNC"
+			(at 36.83 57.15 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C19702.html"
 			(at 36.83 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7446,6 +8205,17 @@
 			)
 		)
 		(property "LCSC Part Name" "1x2P 间距:2.54mm 直插"
+			(at 142.24 128.27 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C7499322.html"
 			(at 142.24 128.27 0)
 			(hide yes)
 			(show_name no)

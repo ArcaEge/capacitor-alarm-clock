@@ -4,4 +4,6 @@ The Onshape project is [available here](https://cad.onshape.com/documents/62d468
 
 The top and bottom halves are held together via a friction fit to reduce the need for screws. However, you'll still need M2x5 screws for mounting the PCB to the bottom enclosure.
 
+Takes around 60g of filament to print.
+
 ![CAD](../assets//cad_image.png)

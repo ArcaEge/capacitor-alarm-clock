@@ -2868,6 +2868,39 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 53.34 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-071KL"
+			(at 53.34 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C22548.html"
+			(at 53.34 90.17 90)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "4dae2c49-4e24-40d5-bf7f-fc3b9674f8d0")
 		)
@@ -3046,7 +3079,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -3151,6 +3184,17 @@
 			)
 		)
 		(property "LCSC Part Name" "1x2P 间距:2.54mm 方针 直插"
+			(at 125.73 40.64 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" ""
 			(at 125.73 40.64 0)
 			(hide yes)
 			(show_name no)
@@ -3321,7 +3365,40 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C15849"
+		(property "Supplier Part" "C29936"
+			(at 59.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 59.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "CL10B105KA8NNNC"
+			(at 59.69 95.25 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C29936.html"
 			(at 59.69 95.25 0)
 			(hide yes)
 			(show_name no)
@@ -3415,6 +3492,39 @@
 			)
 		)
 		(property "Supplier Part" "C2907044"
+			(at 48.26 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 48.26 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "FRC0603F5101TS"
+			(at 48.26 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C2907044.html"
 			(at 48.26 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -3550,6 +3660,17 @@
 			)
 		)
 		(property "LCSC Part Name" "Type-C 母 卧贴"
+			(at 78.74 44.45 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C2765186.html"
 			(at 78.74 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -3834,7 +3955,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "PTVSUC3D5VB"
+		(property "Manufacturer Part" "PESD5V0U1BA-N"
 			(at 184.15 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3856,7 +3977,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C918847"
+		(property "Supplier Part" "C406223"
 			(at 184.15 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -3880,6 +4001,17 @@
 		)
 		(property "LCSC Part Name" "PTVSUC3D5VB"
 			(at 184.15 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C406223.html"
+			(at 184.15 39.37 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -3972,6 +4104,39 @@
 			)
 		)
 		(property "Supplier Part" "C2907044"
+			(at 57.15 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier" "LCSC"
+			(at 57.15 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "FRC0603F5101TS"
+			(at 57.15 58.42 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C2907044.html"
 			(at 57.15 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4387,6 +4552,39 @@
 				)
 			)
 		)
+		(property "Supplier" "LCSC"
+			(at 92.71 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Manufacturer Part" "RC0603FR-07200KL"
+			(at 92.71 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C105574.html"
+			(at 92.71 93.98 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "1"
 			(uuid "5ef86e57-47b4-4af4-90ab-27cec13a4b8c")
 		)
@@ -4600,6 +4798,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C85098.html"
+			(at 123.19 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "8f48800a-4da8-4fa9-a98e-7c1b8fce577b")
 		)
@@ -4682,7 +4891,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "PTVSUC3D5VB"
+		(property "Manufacturer Part" "PESD5V0U1BA-N"
 			(at 163.83 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -4704,7 +4913,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C918847"
+		(property "Supplier Part" "C406223"
 			(at 163.83 39.37 0)
 			(hide yes)
 			(show_name no)
@@ -4728,6 +4937,17 @@
 		)
 		(property "LCSC Part Name" "PTVSUC3D5VB"
 			(at 163.83 39.37 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C406223.html"
+			(at 163.83 39.37 90)
 			(hide yes)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4861,6 +5081,17 @@
 			)
 		)
 		(property "LCSC Part Name" "USBPD多快充协议受电芯片"
+			(at 81.28 100.33 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C5125736.html"
 			(at 81.28 100.33 0)
 			(hide yes)
 			(show_name no)

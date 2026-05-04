@@ -1163,7 +1163,7 @@
 		(unit 1)
 		(body_style 1)
 		(exclude_from_sim no)
-		(in_bom yes)
+		(in_bom no)
 		(on_board yes)
 		(in_pos_files yes)
 		(dnp yes)
@@ -1268,6 +1268,17 @@
 			)
 		)
 		(property "LCSC Part Name" "1x2P 间距:2.54mm 方针 直插"
+			(at 127 97.79 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" ""
 			(at 127 97.79 0)
 			(hide yes)
 			(show_name no)
@@ -1881,6 +1892,17 @@
 				)
 			)
 		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C720557.html"
+			(at 48.26 46.99 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
 		(pin "2"
 			(uuid "11485934-c9e4-4423-8bc2-34eaab7c793f")
 		)
@@ -2009,6 +2031,17 @@
 			)
 		)
 		(property "LCSC Part Name" "电压:40V 电流:3A"
+			(at 125.73 52.07 0)
+			(hide yes)
+			(show_name no)
+			(do_not_autoplace no)
+			(effects
+				(font
+					(size 1.27 1.27)
+				)
+			)
+		)
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C85098.html"
 			(at 125.73 52.07 0)
 			(hide yes)
 			(show_name no)
