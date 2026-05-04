@@ -35,7 +35,7 @@ muif_t muif_list[] = {
 fds_t fds_data[] =
 MUI_FORM(1)
     MUI_STYLE(1)
-    MUI_LABEL(5, 10, "Schedule")
+    MUI_LABEL(5, 10, "Settings")
     MUI_XY("HR", 0,13)
 
     MUI_STYLE(0)
