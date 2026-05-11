@@ -5726,7 +5726,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C19702"
+		(property "Supplier Part" "C96446"
 			(at 46.99 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -5748,7 +5748,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "CL10A106KP8NNNC"
+		(property "Manufacturer Part" "CL10A106MA8NRNC"
 			(at 46.99 82.55 0)
 			(hide yes)
 			(show_name no)
@@ -5759,7 +5759,7 @@
 				)
 			)
 		)
-		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C19702.html"
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C96446.html"
 			(at 46.99 82.55 0)
 			(hide yes)
 			(show_name no)

@@ -4181,7 +4181,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C19702"
+		(property "Supplier Part" "C96446"
 			(at 72.39 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4203,7 +4203,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "CL10A106KP8NNNC"
+		(property "Manufacturer Part" "CL10A106MA8NRNC"
 			(at 72.39 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -4214,7 +4214,7 @@
 				)
 			)
 		)
-		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C19702.html"
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C96446.html"
 			(at 72.39 58.42 0)
 			(hide yes)
 			(show_name no)
@@ -7956,7 +7956,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C19702"
+		(property "Supplier Part" "C96446"
 			(at 36.83 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7978,7 +7978,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "CL10A106KP8NNNC"
+		(property "Manufacturer Part" "CL10A106MA8NRNC"
 			(at 36.83 57.15 0)
 			(hide yes)
 			(show_name no)
@@ -7989,7 +7989,7 @@
 				)
 			)
 		)
-		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C19702.html"
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C96446.html"
 			(at 36.83 57.15 0)
 			(hide yes)
 			(show_name no)
