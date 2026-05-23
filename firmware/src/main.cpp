@@ -19,7 +19,7 @@ void setup() {
     display_init(state);
 
     // Load state
-    state.prefs.begin("capacitor-alarm-clock");
+    state.prefs.begin("cap-clock");
 
     Serial.println("Loading schedule");
     if (state.prefs.getBytes("persistent", &state.persistent, sizeof(state.persistent))) {
