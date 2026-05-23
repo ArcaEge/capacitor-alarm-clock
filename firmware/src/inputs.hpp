@@ -3,8 +3,8 @@
 
 #ifndef BUILD_TEST_ESP8266
 // Building for PCB
-#define BTN_L 6
-#define BTN_R 7
+#define BTN_L 7
+#define BTN_R 6
 #else
 // Building for test ESP8266
 #define BTN_L 2
