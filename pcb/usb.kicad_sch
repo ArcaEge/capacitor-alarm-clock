@@ -4497,7 +4497,7 @@
 				(justify right)
 			)
 		)
-		(property "Value" "200K"
+		(property "Value" "100K"
 			(at 95.25 95.2499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -4541,7 +4541,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C105574"
+		(property "Supplier Part" "C2906980"
 			(at 92.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4563,7 +4563,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "RC0603FR-07200KL"
+		(property "Manufacturer Part" "FRC0603F1003TS"
 			(at 92.71 93.98 0)
 			(hide yes)
 			(show_name no)
@@ -4574,7 +4574,7 @@
 				)
 			)
 		)
-		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C105574.html"
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C2906980.html"
 			(at 92.71 93.98 0)
 			(hide yes)
 			(show_name no)

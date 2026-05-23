@@ -38,7 +38,7 @@ This was originally inspired by ElectroBOOM's [capacitor alarm video](https://ww
 - 3 separate capacitor slots
 - Up to 3A through the capacitors
   - 10 ohm current limiting resistors to avoid brownouts if the capacitor shorts
-- Power via USB-C or barrel jack (12-20V)
+- Power via USB-C or barrel jack (12-15V)
 - Small size (72x74x36mm)
 
 ## PCB
@@ -62,6 +62,9 @@ To build and flash the firmware, you'll need to use PlatformIO. Install the VSCo
 Once flashed and connected to WiFi, the display will show the current time. You can go into the settings by pressing "select" (done by pressing both buttons at once). From there, you can use the left and right buttons to go up and down and set the alarm time, schedule, next capacitor slot and more. You can also go into the "about" page to see the clock's IP.
 
 Once you have the IP, you can go to the web interface at `http://<IP>/`. Note: some browsers might only try HTTPS (looking at you Firefox), so you'll need to manually enter the `http://` part.
+
+> [!NOTE]
+> The voltage regulators might heat up a bit during use, this is normal as there's ~12V of voltage drop across them. It might be a better idea to use a buck converter circuit instead of voltage regulators to step down the voltage. I chose voltage regulators to save on board space, but they do get quite hot. A buck converter circuit would also enable the use of higher input voltages, as the limiting factor right now is thermals.
 
 ## Sourcing capacitors
 

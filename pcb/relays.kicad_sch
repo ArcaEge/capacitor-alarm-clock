@@ -5944,7 +5944,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "5R1"
 			(at 157.48 110.4899 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -5999,7 +5999,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "KNP3WS-10Ω±5% T"
+		(property "Manufacturer Part" "MOF3WS-5.1Ω±5% T"
 			(at 154.94 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -6010,7 +6010,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C122149"
+		(property "Supplier Part" "C121777"
 			(at 154.94 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -6021,7 +6021,7 @@
 				)
 			)
 		)
-		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C122149.html"
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C121777.html"
 			(at 154.94 109.22 0)
 			(hide yes)
 			(show_name no)
@@ -6148,7 +6148,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "5R1"
 			(at 157.48 44.4499 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -6203,7 +6203,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "KNP3WS-10Ω±5% T"
+		(property "Manufacturer Part" "MOF3WS-5.1Ω±5% T"
 			(at 154.94 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6214,7 +6214,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C122149"
+		(property "Supplier Part" "C121777"
 			(at 154.94 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -6225,7 +6225,7 @@
 				)
 			)
 		)
-		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C122149.html"
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C121777.html"
 			(at 154.94 43.18 0)
 			(hide yes)
 			(show_name no)
@@ -7026,7 +7026,7 @@
 				(justify left)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "5R1"
 			(at 229.87 45.7199 0)
 			(show_name no)
 			(do_not_autoplace no)
@@ -7081,7 +7081,7 @@
 				)
 			)
 		)
-		(property "Manufacturer Part" "KNP3WS-10Ω±5% T"
+		(property "Manufacturer Part" "MOF3WS-5.1Ω±5% T"
 			(at 227.33 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7092,7 +7092,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C122149"
+		(property "Supplier Part" "C121777"
 			(at 227.33 44.45 0)
 			(hide yes)
 			(show_name no)
@@ -7103,7 +7103,7 @@
 				)
 			)
 		)
-		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C122149.html"
+		(property "Supplier Part URL" "https://www.lcsc.com/product-detail/C121777.html"
 			(at 227.33 44.45 0)
 			(hide yes)
 			(show_name no)

@@ -554,7 +554,7 @@
 				)
 			)
 		)
-		(property "Value" "200K"
+		(property "Value" "100K"
 			(at 0 1.43 0)
 			(layer "F.Fab")
 			(uuid "2ff8a95b-e5d5-497d-8533-0213f7814203")
@@ -589,7 +589,7 @@
 				)
 			)
 		)
-		(property "Supplier Part" "C105574"
+		(property "Supplier Part" "C2906980"
 			(at 0 0 180)
 			(unlocked yes)
 			(layer "F.Fab")
@@ -2914,7 +2914,7 @@
 				)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "5R1"
 			(at 10.16 -1.5 90)
 			(layer "F.Fab")
 			(uuid "902a084d-4450-441b-9c56-482ce48a274f")
@@ -10656,7 +10656,7 @@
 				)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "5R1"
 			(at 10.16 -1.5 90)
 			(layer "F.Fab")
 			(uuid "e496c0ea-5a68-4e51-a3d7-7e52011643b7")
@@ -15499,7 +15499,7 @@
 				)
 			)
 		)
-		(property "Value" "10R"
+		(property "Value" "5R1"
 			(at 10.16 -1.5 90)
 			(layer "F.Fab")
 			(uuid "a817fc37-b836-4d12-8a2d-d187ac427f0e")
