@@ -41,6 +41,14 @@ This was originally inspired by ElectroBOOM's [capacitor alarm video](https://ww
 - Power via USB-C or barrel jack (12-15V)
 - Small size (72x74x36mm)
 
+Here's how it looks:
+
+<img src="assets/assembled2.png" alt="assembled capacitor alarm clock resting on hand" width="500" />
+
+<img src="assets/assembled.png" alt="assembled" width="500" />
+
+<img src="assets/assembled_lid_off.png" alt="assembled" width="500" />
+
 ## PCB
 
 Images of schematics and more are under the [PCB README](pcb/README.md). A BOM is available under [production](production/). I'd recommend using [JLCPCB](https://jlcpcb.com/) as they seem to have the lowest prices.
