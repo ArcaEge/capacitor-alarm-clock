@@ -53,7 +53,7 @@ Here's how it looks:
 
 Also on YouTube [here](https://youtu.be/eKc19qRxZ5o)
 
-<video controls src="assets/demo.mp4" title="Demo video"></video>
+https://github.com/user-attachments/assets/c24133be-e630-4c25-ad7a-87afec26e37d
 
 ## PCB
 
