@@ -11,6 +11,7 @@
     </p>
     <p>
         <a href="#features">Features</a> •
+        <a href="#demo">Demo</a> •
         <a href="#pcb">PCB</a> •
         <a href="#cad-files">CAD</a> •
         <a href="#building--flashing-firmware">Firmware</a> •
