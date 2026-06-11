@@ -49,6 +49,12 @@ Here's how it looks:
 
 <img src="assets/assembled_lid_off.png" alt="assembled" width="500" />
 
+## Demo
+
+Also on YouTube [here](https://youtu.be/eKc19qRxZ5o)
+
+<video controls src="assets/demo.mp4" title="Demo video"></video>
+
 ## PCB
 
 Images of schematics and more are under the [PCB README](pcb/README.md). A BOM is available under [production](production/). I'd recommend using [JLCPCB](https://jlcpcb.com/) as they seem to have the lowest prices.
