@@ -1,11 +1,11 @@
-%TF.GenerationSoftware,KiCad,Pcbnew,10.0.1-1.fc44*%
-%TF.CreationDate,2026-05-04T12:41:54+01:00*%
+%TF.GenerationSoftware,KiCad,Pcbnew,10.0.3-2.fc44*%
+%TF.CreationDate,2026-06-11T22:53:32+01:00*%
 %TF.ProjectId,capacitor-alarm-clock,63617061-6369-4746-9f72-2d616c61726d,rev?*%
 %TF.SameCoordinates,Original*%
 %TF.FileFunction,Profile,NP*%
 %FSLAX46Y46*%
 G04 Gerber Fmt 4.6, Leading zero omitted, Abs format (unit mm)*
-G04 Created by KiCad (PCBNEW 10.0.1-1.fc44) date 2026-05-04 12:41:54*
+G04 Created by KiCad (PCBNEW 10.0.3-2.fc44) date 2026-06-11 22:53:32*
 %MOMM*%
 %LPD*%
 G01*

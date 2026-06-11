@@ -8,11 +8,11 @@ If you're looking for the production files, they're under [`../production/`](../
 
 ### Front
 
-![front](../assets/pcb/front.png)
+![front](../assets/pcb/front.svg)
 
 ### Back
 
-![back](../assets/pcb/back.png)
+![back](../assets/pcb/back.svg)
 
 ## Schematics
 

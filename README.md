@@ -61,7 +61,7 @@ https://github.com/user-attachments/assets/c24133be-e630-4c25-ad7a-87afec26e37d
 Images of schematics and more are under the [PCB README](pcb/README.md). A BOM is available under [production](production/). I'd recommend using [JLCPCB](https://jlcpcb.com/) as they seem to have the lowest prices.
 
 <a href="pcb/README.md">
-    <img src="assets/pcb/front.png"/>
+    <img src="assets/pcb/front.svg"/>
 </a>
 
 ## CAD files
